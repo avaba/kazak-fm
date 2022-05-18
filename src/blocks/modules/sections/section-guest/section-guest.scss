@@ -1,0 +1,212 @@
+.guest {
+  @include media-breakpoint-down(xxl) {
+    .section__title {
+      margin-bottom: 90px;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    .section__title {
+      margin-bottom: 50px;
+    }
+  }
+
+  &-slider {
+    margin-left: 15px;
+    height: 100%;
+    max-height: 500px;
+
+    @include media-breakpoint-down(xl) {
+      max-height: 400px;
+    }
+
+    @include media-breakpoint-down(md) {
+      margin-left: 0;
+      filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.05));
+      max-height: none;
+
+      .slick-arrow.slick-prev {
+        left: -20px;
+      }
+
+      .slick-arrow.slick-next {
+        right: -20px;
+      }
+    }
+
+    .slick-list.draggable {
+      height: 100%;
+    }
+
+    .slick-slide > div {
+      height: 100%;
+      display: flex;
+    }
+
+    .slick-track {
+      height: 100%;
+    }
+
+    &__item {
+      height: 100%;
+      min-height: 100%;
+      position: relative;
+
+      .row {
+        height: 100%;
+      }
+
+      &--left {
+        padding-right: 0;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+
+      &--right {
+        padding-left: 0;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+          padding-left: 15px;
+        }
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 40px;
+        bottom: 40px;
+        width: 250px;
+        height: 127px;
+        display: block;
+        background: url("/img/guest-artefact.svg") no-repeat center;
+        background-size: cover;
+
+        @include media-breakpoint-down(xxl) {
+          width: 215px;
+          height: 109px;
+          left: 20px;
+          bottom: 20px;
+        }
+      }
+    }
+
+    &__img {
+      height: 100%;
+      width: 100%;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      object-fit: cover;
+      object-position: center;
+      border-radius: 10px 0px 0px 10px;
+
+      @include media-breakpoint-down(md) {
+        display: none !important;
+      }
+    }
+    
+    &__content {
+      height: 100%;
+      background: #fff;
+      padding: 40px;
+      border-radius: 0px 0px 192.5px 0px;
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0;
+        text-align: center;
+        height: auto;
+        padding: 30px 16px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 375px;
+        height: 250px;
+        display: block;
+        background: url("/img/guest-artefact-2.svg") no-repeat center;
+        background-size: cover;
+
+        @include media-breakpoint-down(xxl) {
+          width: 327px;
+          height: 218px;
+        }
+
+        @include media-breakpoint-down(md) {
+          display: none;
+        }
+      }
+    }
+    
+    &__mobile {
+      display: none !important;
+
+      @include media-breakpoint-down(md) {
+        display: block !important;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 20px auto;
+        border-radius: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &__title {
+      font-size: 46px;
+      line-height: 130%;
+      margin-bottom: 13px;
+      font-weight: 600;
+
+      @include media-breakpoint-down(xxl) {
+        font-size: 34px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 35px;
+      }
+    }
+
+    &__text {
+      font-size: 22px;
+      line-height: 140%;
+      color: #555555;
+      margin-bottom: 30px;
+
+      @include media-breakpoint-down(xxl) {
+        font-size: 18px;
+      }
+
+      @include media-breakpoint-down(md) {
+        font-size: 16px;
+      }
+    }
+
+    &__date {
+      font-size: 18px;
+      line-height: 140%;
+      font-feature-settings: 'tnum' on, 'lnum' on;
+      color: #0D0D0D;
+
+      @include media-breakpoint-down(xxl) {
+        font-size: 14px;
+      }
+    }
+
+    &__btn {
+      margin-top: auto;
+    }
+  }
+}

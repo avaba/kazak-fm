@@ -1,0 +1,287 @@
+
+.btn {
+  background: $red;
+  border: 1px solid $red;
+  color: #fff;
+  padding: 10px 16px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  transition: all .2s;
+  position: relative;
+  border-radius: 5px;
+
+  @include media-breakpoint-down(xxl) {
+    font-size: 16px;
+  }
+
+  @include media-breakpoint-down(xl) {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+
+  &:hover {
+    background: $blue;
+    color: #fff;
+    transition: all .2s;
+    border-color: $blue;
+    svg use {
+      transition: all .2s;
+      //fill: $red;
+    }
+  }
+
+  svg {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+
+    @include media-breakpoint-down(xl) {
+      width: 24px;
+      height: 24px;
+    }
+
+    use {
+      transition: all .2s;
+      fill: #fff;
+    }
+  }
+
+  &-live {
+    padding: 0;
+    background: transparent;
+    border: none;
+    color: #040B1A;
+    font-weight: 500;
+
+    svg {
+      use {
+        fill: $red;
+      }
+    }
+
+    &:hover {
+      background: transparent;
+      color: #040B1A;
+    }
+  }
+
+  &-icon {
+    &:before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: url("../img/watch.svg") no-repeat;
+      margin-right: 10px;
+    }
+  }
+
+  &-hear {
+    &:before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 28px;
+      background: url("../img/hear.svg") no-repeat;
+      margin-right: 10px;
+    }
+  }
+
+  &-outline {
+    background: transparent;
+    color: $red;
+
+    &:hover {
+      color: #fff;
+      background: $red;
+      border-color: $red;
+    }
+  }
+
+  &-wave {
+    margin-left: 48px;
+
+    @include media-breakpoint-down(xxl) {
+      margin-left: 40px;
+    }
+    
+    &:hover {
+      background-color: $red;
+      color: #fff;
+      opacity: .8;
+      border-color: $red;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      right: 100%;
+      top: 0;
+      width: 48px;
+      height: 100%;
+      background-image: url("../img/wave.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @include media-breakpoint-down(xxl) {
+        width: 40px;
+      }
+    }
+  }
+
+  &-play {
+    position: relative;
+    background: transparent;
+    border: 0;
+    padding: 0 8px 0 0;
+    color: $red;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    transition: all .2s;
+
+    &:before {
+      content: "";
+      display: block;
+      width: 9px;
+      height: 28px;
+      background: url(../img/play.svg) no-repeat;
+      margin-right: 10px;
+      background-position: center;
+    }
+
+    &.pause {
+      &:before {
+        background: url("../img/pause.svg") no-repeat;
+      }
+    }
+  }
+
+  &-back {
+    background: $accent;
+    border-color: $accent;
+    position: relative;
+    padding-left: 50px !important;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 16px;
+      width: 20px;
+      min-height: 100%;
+      background-image: url(/img/back.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+    }
+    &:hover {
+      background: $red;
+      border-color: $red;
+    }
+  }
+  &.white-btn {
+    background: #fff;
+    color: $red;
+    &:hover {
+      background: $red;
+      color: #fff;
+    }
+  }
+}
+
+.slick-arrow {
+  background: $red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $red;
+  transition: all .2s;
+
+  @include media-breakpoint-down(xxl) {
+    width: 50px;
+    height: 50px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    background: $blue;
+    transition: all .2s;
+    border-color: $blue;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-down(xxl) {
+      width: 15px;
+      height: 25px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      width: 10px;
+      height: 16px;
+    }
+  }
+
+  &.slick-prev {
+    left: -29px;
+
+    @include media-breakpoint-down(lg) {
+      left: 10px;
+    }
+
+    &:before {
+      background-image: url("../img/arrow-left.svg");
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &.slick-next {
+    right: -29px;
+
+    @include media-breakpoint-down(lg) {
+      right: 10px;
+    }
+
+    &:before {
+      background-image: url("../img/arrow-right.svg");
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+
+@media (max-width: 479.98px) {
+  h1 {
+    font-size: 30px;
+  }
+}

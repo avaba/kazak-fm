@@ -1,0 +1,20 @@
+<section class="news section">
+    <div class="container-fluid">
+
+        <div class="news__header">
+            <h2 class="section__title">@@title</h2>
+
+            <div class="news__btn">
+                <a href="#" class="btn btn-outline">Читать все новости</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            @@for (let i = 0; i < 10; i++) {
+            <div class="news-slider__item">
+                @@include("../../cards/card-news/card-news.html")
+            </div>
+            }
+        </div>
+    </div>
+</section>

@@ -1,0 +1,110 @@
+.action {
+    &__btn {
+        text-align: right;
+        margin-top: 80px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: -30px;
+    }
+    &__item {
+        display: flex;
+        position: relative;
+        margin-bottom: 30px;
+        filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.05));
+        &-image {
+            width: 50%;
+            img {
+                border-radius: 0px 0px 0px 159px;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        &-content {
+            background: $white;
+            width: 50%;
+            padding: 30px;
+            flex: 1;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 130%;
+                margin-bottom: 21px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 140%;
+            }
+            .btn {
+                margin-top: auto;
+                width: max-content;
+            }
+        }
+        &-artefact {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            max-width: 151px;
+            width: 50%;
+        }
+    }
+}
+
+@media (max-width: 1080px) {
+    .action {
+        &__item {
+            width: 100%;
+            &-image {
+                width: 33%;
+                max-width: 500px;
+            }
+        }
+    }
+
+     @include media-breakpoint-down(sm) { 
+        .action {
+            &__btn {
+                text-align: left;
+            }
+            &__item {
+                flex-direction: column;
+                width: 50%;
+                &-image {
+                    max-width: 100%;
+                    width: 100%;
+                    img {
+                        border-radius: 0;
+                    }
+                }
+                &-content {
+                    width: 100%;
+                    border-radius: 0px 0px 100px 0px;
+                    padding: 23px 29px;
+                    h2 {
+                        font-size: 23px;
+                    }
+                    p {
+                        font-size: 14px;
+                        margin-bottom: 25px;
+                    }
+                }
+                &-artefact {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 479.98px) {
+    .action {
+        &__item {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.author {
+    &__avatar {
+        display: flex;
+        img {
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+            border-radius: 100%;
+        }
+    }
+    &__name {
+        &-name {
+            margin-top: 4px;
+            margin-bottom: 0;
+            font-weight: 600;
+            font-size: 24px;
+            color: $blue;
+        }
+    }
+}
+
+@media (max-width: 479.98px) {
+    .author {
+        &__avatar {
+            margin-bottom: 20px;
+        }
+        &__name {
+            span {
+                font-size: 14px;
+                line-height: 140%;
+            }
+            &-name {
+                font-size: 16px;
+                line-height: 130%;
+                margin-top: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+}

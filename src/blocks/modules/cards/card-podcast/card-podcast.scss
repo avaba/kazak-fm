@@ -1,0 +1,65 @@
+.card-podcast {
+  border-radius: 0px 125px 0px 0px;
+  background: #FFFFFF;
+  filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.05));
+  overflow: hidden;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: all 0.3s ease;
+  &:hover {
+    transform: translateY(-10px);
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 130%;
+    padding-right: 45px;
+    margin-bottom: 8px;
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 24px;
+      margin-bottom: 9px;
+    }
+  }
+
+  &__name {
+    color: #2670FF;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 20px;
+    margin-top: auto;
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__thumb {
+    margin: 30px -40px -30px -40px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 53.41px;
+      height: 104.41px;
+      background: url('../img/poscast-artefact.svg');
+      background-size: contain;
+    }
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      object-position: center;
+
+      @include media-breakpoint-down(xxl) {
+        height: 224px;
+      }
+    }
+  }
+}

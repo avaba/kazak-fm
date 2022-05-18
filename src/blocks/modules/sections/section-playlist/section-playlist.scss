@@ -1,0 +1,207 @@
+.podcast {
+    background: #fff;
+}
+.playlist {
+    &__content {
+        display: flex;
+        align-items: flex-start;
+    }
+    &__title {
+        width: 318px;
+        margin-right: 30px;
+    }
+    &__header {
+        h3 {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 21px;
+        }
+        &-select {
+            width: 100%;
+            border: 1px solid #FCAF17;
+            color: #555555;
+            font-size: 16px;
+            line-height: 140%;
+            padding: 15px 20px 16px;
+            margin-bottom: 80px;
+        }
+    }
+    &__video {
+        width: 100%;
+        margin-bottom: 80px;
+        iframe {
+            min-height: 570px;
+            width: 100%;
+        }
+    }
+    &__row {
+        flex: 1;
+    }
+    &__list {
+        &.short {
+            .playlist__item {
+               span {
+                &:first-child {
+                    flex: 1
+                }
+                &:last-child {
+                    flex: 0;
+                }
+               }
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        padding: 12px 20px 14px;
+        border-bottom: 1px solid #CFCFCF;
+        cursor: pointer;
+        opacity: 1;
+        &.animated {
+            opacity: 0;
+        }
+        &:last-child {
+            border-bottom: none;
+        }
+        &:hover,
+        &.active {
+            background: #F7F7F7;
+        }
+        span {
+            &:first-child {
+                width: 120px;
+                margin-right: 20px;
+            }
+            &:nth-child(2) {
+                flex: 1;
+            }
+            &:last-child {
+                width: 50px;
+                margin-left: 20px;
+            }
+        }
+    }
+    &__bottom {
+        margin-top: 50px;
+        .btn-wave {
+            display: none;
+        }
+        .btn {
+            border-radius: 5px;
+        }
+        .shape {
+            margin-top: 60px;
+        }
+    }
+    &__like {
+        margin-top: 60px;
+        button {
+            background: none;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 130%;
+            svg {
+                width: 28px;
+                height: 28px;
+                margin-right: 8px;
+            }
+        }
+    }
+    &.home {
+        .short {
+            height: 155px;
+            overflow: hidden;
+            transition: all .3s;
+
+            &.show {
+                transition: all .3s;
+                height: auto;
+            }
+        }
+
+        .playlist__item {
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .playlist {
+        &__title {
+            width: 100%;
+            margin-right: 0;
+        }
+        &__content {
+            flex-direction: column;
+        }
+        &__row {
+            width: 100%;
+        }
+    }
+}
+
+ @include media-breakpoint-down(sm) { 
+    .playlist {
+        &__bottom {
+            .btn-wave {
+                display: inline-block;
+            }
+            .btn-outline {
+                display: none;
+            }
+        }
+        &__like {
+            button {
+                font-size: 16px;
+                align-items: flex-start;
+                span {
+                    text-align: left;
+                }
+                
+            }
+        }
+    }
+}
+
+@media (max-width: 565.98px) {
+    .playlist__item span:first-child {
+        display: none;
+    }
+    .playlist__list.short .playlist__item span:first-child {
+        display: block;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .playlist {
+        &__item {
+            padding: 12px 0px 14px;
+            span {
+                font-size: 14px;
+            }
+        }
+        &__video {
+            display: none;
+        }
+        &__header {
+            h3 {
+                font-size: 16px;
+                line-height: 150%;
+                font-weight: 400;
+            }
+            &-select {
+                margin-bottom: 60px;
+                font-size: 14px;
+                line-height: 140%;
+                padding: 11px 20px 13px;
+            }
+        }
+    }
+}

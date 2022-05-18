@@ -1,0 +1,36 @@
+<section class="guest section">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-xl-3">
+                <div class="section__left">
+                    <h2 class="section__title">Наши гости</h2>
+                </div>
+            </div>
+
+            <div class="col-xl-9">
+                <div class="guest-slider">
+                    @@for (let i = 0; i < 6; i++) {
+                    <div class="guest-slider__item">
+                        <div class="row">
+                            <div class="col-md-8 guest-slider__item--left">
+                                <img class="guest-slider__img" src="/img/guest.png" alt="">
+                            </div>
+                            <div class="col-md-4 guest-slider__item--right">
+                                <div class="guest-slider__content">
+                                    <img class="guest-slider__mobile" src="/img/mobile-guast.png" alt="">
+                                    <h3 class="guest-slider__title">Самвел Айрапетян</h3>
+                                    <p>Самвел - новый гость программы «Хорошо!», в которой он расскажет о своем творческом пути</p>
+                                    <p class="guest-slider__date">17.06.2021 г.</p>
+                                    <div class="guest-slider__btn">
+                                        <a href="#" class="btn">Подробнее</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

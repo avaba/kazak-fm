@@ -1,0 +1,227 @@
+.home-slider {
+  margin-top: 100px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: #fff;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -100px;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background: #fff;
+  }
+
+  .container-fluid {
+    @include media-breakpoint-down(lg) {
+      padding: 0;
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    margin-top: 50px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    margin-top: 0;
+  }
+
+  .intro {
+    &__item {
+      height: 800px;
+      background: #eee;
+      position: relative;
+      padding: 30px;
+      overflow: hidden;
+      border-radius: 20px;
+      @include media-breakpoint-down(xxl) {
+        height: 657px;
+        padding: 20px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        padding: 30px;
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        width: 256px;
+        height: 256px;
+        background-image: url("../img/slide-texture.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        z-index: 2;
+
+        @include media-breakpoint-down(xxl) {
+          width: 200px;
+          height: 200px;
+          right: 20px;
+          bottom: 20px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          background-image: url("../img/slide-texture4.svg");
+          width: 150px;
+          height: 75px;
+          bottom: 0;
+          right: auto;
+          left: 30px;
+        }
+      }
+
+      &--img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+
+        &.mobile {
+          display: none;
+        }
+
+        @include media-breakpoint-down(sm) {
+          &.mobile {
+            display: block;
+            z-index: 1;
+            object-position: center bottom;
+          }
+        }
+      }
+    }
+
+    &__wrap {
+      position: relative;
+      z-index: 3;
+      width: 645px;
+      height: 480px;
+      background: #fff;
+      border-radius: 10px 10px 208.5px 10px;
+      padding: 38px 50px;
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+
+      @include media-breakpoint-down(xxl) {
+        width: 500px;
+        height: 417px;
+        padding: 30px 40px;
+        border-radius: 10px 10px 124.5px 10px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        height: auto;
+        width: 300px;
+        padding: 20px 30px 30px 30px;
+      }
+
+      @include media-breakpoint-down(sm) {
+        width: 100%;
+      }
+
+      @include media-breakpoint-up(lg) {
+        &:before {
+          content: "";
+          position: absolute;
+          left: 100%;
+          top: 0;
+          background-image: url("../img/slide-texture2.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 256px;
+          width: 128px;
+
+          @include media-breakpoint-down(xxl) {
+            width: 100px;
+            height: 200px;
+          }
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 100%;
+          background-image: url("../img/slide-texture3.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          width: 645px;
+          height: 257px;
+
+          @include media-breakpoint-down(xxl) {
+            width: 500px;
+            height: 200px;
+          }
+        }
+      }
+
+      &--title {
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 120%;
+        margin-bottom: 12px;
+
+        @include media-breakpoint-down(xxl) {
+          font-size: 60px;
+          line-height: 130%;
+          margin-bottom: 20px;
+        }
+
+        @include media-breakpoint-down(lg) {
+          font-size: 40px;
+          margin-bottom: 5px;
+        }
+
+        @include media-breakpoint-down(sm) {
+          font-size: min(max(10.5vw, 20px), 40px);
+        }
+      }
+
+      &--text {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 150%;
+        margin-bottom: 15px;
+        color: #555555;
+
+        @include media-breakpoint-down(xxl) {
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 150%;
+        }
+
+        @include media-breakpoint-down(lg) {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+
+          br {
+            display: none;
+          }
+        }
+      }
+
+      &--btn {
+        margin-top: auto;
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+.condition {
+    .container-fluid {
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            width: 32%;
+            background: url('../img/listen.svg') no-repeat right bottom;
+            background-size: contain;
+        }
+    }
+    h2 {
+        max-width: 70%;
+        width: 100%;
+    }
+    &__list {
+        font-size: 20px;
+        line-height: 140%;
+        margin-top: 80px;
+        display: flex;
+    }
+    &__item {
+        max-width: 335px;
+        p {
+            padding-right: 25px;
+            margin: 0;
+        }
+        &-title {
+            display: block;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 130%;
+            margin-bottom: 16px;
+        }
+    }
+    &__text {
+        margin-top: 52px;
+        color: #555555;
+        font-size: 14px;
+        max-width: 750px;
+        width: 60%;
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .condition {
+        .container-fluid {
+            &::after {
+                right: 30px;
+            }
+        }
+        &__list {
+            flex-direction: column;
+            gap: 40px 0;
+        }
+        &__item {
+            width: 70%;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .condition {
+        .container-fluid {
+            &::after {
+                content: none;
+            }
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 30px;
+            max-width: 100%;
+        }
+        &__list {
+            margin-top: 60px;
+        }
+        &__item {
+            max-width: 100%;
+            width: 100%;
+            p {
+                padding: 0;
+                font-size: 16px;
+                line-height: 140%;
+            }
+            ol {
+                font-size: 16px;
+                line-height: 140%;
+                margin-bottom: 0;
+            }
+        }
+        &__text {
+            width: 100%;
+        }
+    }
+}

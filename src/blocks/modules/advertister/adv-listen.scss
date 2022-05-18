@@ -1,0 +1,105 @@
+.listen {
+    &__title {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        h2 {
+            background: $accent;
+            font-weight: 600;
+            font-size: 50px;
+            line-height: 130%;
+            flex: 1;
+            padding: 25px;
+            text-align: center;
+        }
+    }
+    &__text {
+        margin-top: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__row {
+        width: 48%;
+        font-size: 20px;
+        line-height: 140%;
+        img {
+            width: 100%;
+            margin-left: 68px;
+            margin-top: -40px;
+        }
+        &-text {
+            position: relative;
+            z-index: 2;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 150%;
+        }
+    }
+    &__btn {
+        margin-top: 65px;
+        display: block;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+        color: $accent;
+        border: 3px solid #FCAF17;
+        padding: 30px 36px;
+        text-align: center;
+        transition: all 0.3s ease;
+        &:hover {
+            color: $red;
+            border-color: $red;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .listen__title {
+        img {
+            display: none;
+        }
+        h2 {
+            padding: 40px 0;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .listen {
+        &__text {
+            flex-direction: column;
+            margin-top: 23px;
+        }
+        &__title {
+            h2 {
+                padding: 30px;
+                font-size: 35px;
+                margin: 0 -30px;
+                width: calc(100% + 60px);
+            }
+        }
+        &__row {
+            width: 100%;
+            font-size: 16px;
+            &:first-child {
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            img {
+                margin-left: 0;
+                margin-top: 0;
+                margin-bottom: -33px;
+            }
+            &-text {
+                margin-bottom: 32px;
+                font-size: 16px;
+            }
+        }
+        &__btn {
+            font-size: 24px;
+            padding: 40px 30px;
+            margin: 76px -30px 0;
+            width: calc(100% + 60px);
+        }
+    }
+}

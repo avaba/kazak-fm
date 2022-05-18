@@ -1,0 +1,28 @@
+.transfers-grid {
+  position: relative;
+
+  .news {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -1000%;
+      height: 1000%;
+      background: #fff;
+      left: 0;
+      width: 100%;
+      z-index: -1;
+      margin-top: 386px;
+
+      @include media-breakpoint-down(xl) {
+        margin-top: 396px;
+      }
+
+      @include media-breakpoint-down(lg) {
+        margin-top: 354px;
+      }
+    }
+  }
+}

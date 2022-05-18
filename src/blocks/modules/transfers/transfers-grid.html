@@ -1,0 +1,9 @@
+<div class="transfers-grid">
+    <div class="container-fluid">
+        @@for (let i = 0; i < 5; i++) {
+        @@include("../cards/card-transfers/card-transfer-big.html")
+        }
+    </div>
+
+    @@include("../sections/section-podcasts/section-podcasts-slider.html", {title: "Слушать наши подкасты", titleSm: "Подкасты"})
+</div>

@@ -1,0 +1,102 @@
+section.action {
+  margin-bottom: 0;
+  &.action-slider {
+      .section__title {
+          margin-bottom: 94px;
+      }
+  }
+}
+.events {
+  .news-content__img:before,
+  .news-content__img:after {
+    content: none!important;
+  }
+  .action__item {
+    &-artefact {
+      display: none;
+    }
+    &-image {
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 124px;
+        height: 124px;
+        background: url('../img/guest-art.svg') no-repeat;
+        background-size: contain;
+         @include media-breakpoint-down(sm) { 
+          width: 100px;
+          height: 100px;
+        }
+      }
+      img {
+        border-radius: 159px 0px 0px 0px;
+         @include media-breakpoint-down(sm) { 
+          border-radius: 100px 0px 0px 0px;
+        }
+      }
+    }
+  }
+}
+.action__list {
+    &.action__slider {
+        @include media-breakpoint-down(md) {
+            .slick-arrow {
+              transform: translateY(0);
+              top: 185px;
+            }
+      
+            .slick-arrow.slick-prev {
+              left: -5px;
+            }
+      
+            .slick-arrow.slick-next {
+              right: -5px;
+            }
+          }
+      
+          @include media-breakpoint-up(md) {
+            .slick-arrow {
+              top: auto;
+              bottom: 100%;
+              transform: translateY(0);
+              right: 18px;
+              margin-bottom: 86px;
+      
+              @include media-breakpoint-down(xxl) {
+                right: 15px;
+              }
+      
+              &.slick-prev {
+                left: auto;
+                right: 128px;
+      
+                @include media-breakpoint-down(xxl) {
+                  right: 100px;
+                }
+              }
+            }
+          }
+        .action__item {
+            display: flex!important;
+            padding: 0 15px;
+        }
+    }
+}
+
+ @include media-breakpoint-down(sm) { 
+    .action__list {
+        &.action__slider {
+            .slick-slide {
+                img.action__item-artefact {
+                    display: none;
+                }
+            }
+        }
+    }
+    .section.action {
+      margin: 60px 0 0 0;
+    }
+}

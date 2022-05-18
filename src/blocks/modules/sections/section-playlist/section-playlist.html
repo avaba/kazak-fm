@@ -1,0 +1,24 @@
+<section class="section playlist">
+    <div class="container-fluid">
+        <div class="playlist__content">
+            <div class="playlist__title">
+                <h2 class="section__title">@@title</h2>
+            </div>
+            <div class="playlist__row">
+                <div class="playlist__list">
+                    @@for (let i = 0; i < 10; i++) { <div class="playlist__item">
+                        <span class="playlist__item-date">08.07.2021</span>
+                        <span class="playlist__item-name">Программа «Хорошо!». Мегги</span>
+                        <span class="playlist__item-duration">20:12</span>
+                </div>
+                }
+            </div>
+            <div class="playlist__bottom">
+                <button class="btn btn-outline">Показать еще 10 подкастов</button>
+                <button class="btn btn-wave">Показать больше</button>
+                @@include("../../pages/shape.html")
+            </div>
+        </div>
+    </div>
+    </div>
+</section>

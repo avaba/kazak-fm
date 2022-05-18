@@ -1,0 +1,144 @@
+.title-page {
+  position: relative;
+  margin-bottom: 150px;
+  z-index: 2;
+  margin-top: 50px;
+
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 60px;
+    margin-top: 0;
+  }
+
+  &__wrap {
+    display: inline-flex;
+    background: $accent;
+    color: #fff;
+    align-items: center;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      display: block;
+      left: -1000%;
+      width: 1000%;
+      height: 100%;
+      background: $accent;
+      margin-left: 1px;
+    }
+    &--mobile {
+      display: none;
+    }
+    &--right {
+      position: absolute;
+      left: 100%;
+      top: 0;
+
+      @include media-breakpoint-down(sm) {
+        height: 105px;
+      }
+    }
+
+    &--left {
+      margin-right: -1px;
+
+      @include media-breakpoint-down(sm) {
+        height: 105px;
+      }
+    }
+
+    h1 {
+      font-size: 50px;
+      line-height: 130%;
+      margin-right: 100px;
+      font-weight: 600;
+      @include media-breakpoint-down(sm) {
+        font-size: 35px;
+        line-height: 130%;
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 565.98px) {
+  .title-page__wrap {
+    margin-right: -30px;
+    width: calc(100% + 30px);
+    justify-content: space-between;
+  }
+  .title-page__wrap--right {
+    display: none;
+  }
+  .title-page__wrap--left {
+    display: none;
+    &.title-page__wrap--mobile {
+      display: inline-block;
+    }
+  }
+}
+
+.back-btn {
+  margin: 50px 0 80px 0;
+
+  @include media-breakpoint-down(xxl) {
+    margin: 40px 0 60px 0;
+  }
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+
+  a {
+    margin-right: 30px;
+    color: #2670FF;
+    opacity: 0.7;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+}
+
+.shape {
+  &__title {
+    opacity: 0.7;
+    font-size: 16px;
+    line-height: 140%;
+  }
+
+  &__list {
+    display: flex;
+
+    a {
+      margin-right: 20px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        svg path {
+          fill: $blue;
+        }
+      }
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.about-us {
+    &__grid {
+        display: grid;
+        grid-template-columns: repeat(4, calc(25% - 23px));
+        gap: 30px;
+        @media (max-width: 1200px) {
+            grid-template-columns: repeat(3, calc(33.3333% - 23px));
+        }
+        @media (max-width: 991px) {
+            grid-template-columns: repeat(2, calc(50% - 16px));
+        }
+        @media (max-width: 565.98px) {
+            grid-template-columns: repeat(1, 100%);
+        }
+    }
+}
+
+.card-about {
+    cursor: pointer;
+    background: $white;
+    overflow: hidden;
+    border-radius: 0px 0px 158px 0px;
+    filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.05));
+    transition: all 0.3s ease;
+    &:hover {
+        filter: none;
+    }
+    &__title {
+        padding: 20px 30px;
+        font-weight: 600;
+        font-size: 34px;
+        line-height: 130%;
+    }
+    &__info {
+        display: none;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 140%;
+        .shape {
+            &__list {
+                justify-content: center;
+            }
+        }
+    }
+    &__image {
+        position: relative;
+        z-index: 2;
+        img {
+            width: 100%;
+        }
+        &::after {
+            content: "";
+            background: $accent;
+            position: absolute;
+            bottom: -160px;
+            left: -160px;
+            width: 320px;
+            height: 320px;
+            border-radius: 100%;
+            z-index: -1;
+        }
+    }
+
+}
+
+@media (max-width: 565.98px) {
+    .card-about {
+        border-radius: 0px 0px 100px 0px;
+        &__title {
+            padding-right: 10px;
+        }
+    }
+}

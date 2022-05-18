@@ -1,0 +1,102 @@
+.quest__slider {
+    .col-xl-3 {
+        position: relative;
+    }
+    .section__artefact {
+        position: absolute;
+        bottom: -147px;
+    }
+    .guest-slider {
+        height: auto;
+        max-height: 742px;
+        .slick-slide {
+            height: auto;
+        }
+        &__item {
+            &::before {
+                content: none;
+            }
+        }
+        &__image {
+            position: relative;
+            flex: 1;
+            &::before {
+                content: "";
+                z-index: +1;
+                position: absolute;
+                right: 0px;
+                bottom: 0;
+                width: 160px;
+                height: 160px;
+                display: block;
+                background: url(/img/guest-art.svg) no-repeat center;
+                background-size: cover;
+            }
+            img {
+                border-radius: 159px 0px 0px 0px;
+            }
+        }
+        &__row {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        &__container {
+            max-width: 470px;
+            width: 50%;
+            padding: 31px 23px 40px 40px;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            filter: drop-shadow(4px 4px 12px rgba(0, 0, 0, 0.05));
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .quest__slider {
+        .guest-slider__img {
+            display: block!important;
+        }
+    }
+}
+
+ @include media-breakpoint-down(sm) { 
+    .quest__slider .guest-slider__row {
+        flex-direction: column-reverse;
+    }
+    .quest__slider .guest-slider__container {
+        width: 100%;
+        border-radius: 0px 100px 0px 0px;
+        padding: 23px 30px 30px;
+        max-width: 100%;
+        margin-top: -120px;
+        position: relative;
+        z-index: 2;
+    }
+    .quest__slider .guest-slider__image::before {
+        width: 151px;
+        height: 100px;
+        bottom: 120px;
+        background: url(/img/guest-mobile.svg) no-repeat center;
+    }
+}
+
+@media (max-width: 565.98px) {
+    .quest__slider .guest-slider__title {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 14px;
+    }
+    .quest__slider .guest-slider__date {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        margin-bottom: 26px;
+    }
+    .quest__slider .guest-slider__image img {
+        min-height: 343px;
+        width: 100%;
+        height: 100%;
+    }
+}

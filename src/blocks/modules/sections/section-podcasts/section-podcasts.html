@@ -1,0 +1,29 @@
+<section class="section">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-stretch">
+            <div class="col-xl-3">
+                <div class="section__left">
+                    <h2 class="section__title">Подкасты</h2>
+                    <svg class="section__artefact" width="415" height="827" viewBox="0 0 415 827">
+                        <use xlink:href="img/sprites/sprite.svg#podcasts"></use>
+                    </svg>
+                    <div class="section__left--btn">
+                        <a href="#" class="btn btn-outline">Слушать все</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9">
+                <div class="row d-flex align-items-stretch">
+                    @@for (let i = 0; i < 6; i++) { <div class="col-md-4 col-sm-6 section__article">
+                        @@include("../../cards/card-podcast/card-podcast.html")
+                </div>
+                }
+            </div>
+        </div>
+
+        <div class="section__mobile-btn">
+            <a href="#" class="btn btn-wave">Слушать все</a>
+        </div>
+    </div>
+    </div>
+</section>

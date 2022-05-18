@@ -1,0 +1,113 @@
+body {
+  font-family: 'Commissioner', sans-serif;
+  font-weight: 400;
+  font-feature-settings: 'tnum' on, 'lnum' on;
+  color: #0D0D0D;
+  background: $gray;
+}
+
+.site {
+  position: relative;
+  overflow: hidden;
+  padding-top: 91px;
+  &.bg {
+    background: linear-gradient(180deg, #ffffff 475px, #f7f7f7 475px);
+    @media (max-width: 656.98px) {
+      background: #f7f7f7;
+    }
+    &-inside {
+      background: linear-gradient(180deg, #ffffff 650px, #f7f7f7 650px);
+    }
+  }
+  &.bg-release {
+    background: linear-gradient(0deg, #f7f7f7 2529px, #ffffff 2529px);
+    @media (max-width: 656.98px) {
+      background: #fff;
+    }
+  }
+  &.bg-guest {
+    background: linear-gradient(0deg, #f7f7f7 2750px, #ffffff 2750px);
+    @include media-breakpoint-down(md) {
+      background: linear-gradient(0deg, #f7f7f7 2450px, #ffffff 2450px);
+    }
+    @media (max-width: 656.98px) {
+      background: linear-gradient(0deg, #f7f7f7 2320px, #ffffff 2320px);
+    }
+  }
+  &.bg-action {
+    background: linear-gradient(0deg, #f7f7f7 279px, #ffffff 279px);
+    @media (max-width: 656.98px) {
+      background: linear-gradient(0deg, #f7f7f7 279px, #ffffff 279px);
+    }
+  }
+  &.bg-contacts {
+    background: linear-gradient(180deg, #ffffff 750px, #f7f7f7 750px);
+    @media (max-width: 656.98px) {
+      background: linear-gradient(180deg, #ffffff 650px, #f7f7f7 650px);
+    }
+  }
+  &.bg-all {
+    background-color: #fff;
+  }
+
+  @include media-breakpoint-down(xl) {
+    padding-top: 96px;
+  }
+}
+
+.sitemap {
+  ul {
+    list-style: none;
+    font-size: 20px;
+    a {
+      line-height: 150%;
+    }
+  }
+}
+
+.container, .container-fluid {
+  padding: 0 60px;
+  max-width: 1690px;
+
+  @include media-breakpoint-up(xxl) {
+    max-width: 1920px;
+  }
+
+  @include media-breakpoint-down(xxl) {
+    padding: 0 40px;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding: 0 30px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+.separator {
+  height: 51px;
+  background: url("../img/hr.svg");
+  width: 300%;
+  transform: translateX(-50%);
+  &-mobile {
+    display: none;
+    @include media-breakpoint-down(md) {
+      display: block;
+    }
+  }
+  &__content {
+    overflow: hidden;
+  }
+}

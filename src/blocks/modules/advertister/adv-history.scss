@@ -1,0 +1,102 @@
+.history {
+    &__content {
+        display: flex;
+    }
+    &__image {
+        width: 318px;
+        margin-right: 35px;
+    }
+    &__list {
+        flex: 1;
+        &-row {
+            display: flex;
+            gap: 30px;
+            &:not(:last-child) {
+                border-bottom: 1px solid #CFCFCF;
+            }
+            &.history-title {
+                .history__item {
+                    padding: 0 0 23px;
+                    span {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+    &__item {
+        width: 33.3333%;
+        padding: 40px 0 32px;
+        color: #555555;
+        font-size: 20px;
+        line-height: 140%;
+        p {
+            margin: 0;
+        }
+        span {
+            display: none;
+            align-items: center;
+        }
+        svg {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        &:last-child {
+            color: #0D0D0D;
+            font-weight: 500;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .history__image {
+        width: 230px;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .history {
+        &__image {
+            display: none;
+        }
+        &__item {
+            font-size: 16px;
+        }
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .history {
+        .section__title {
+            font-weight: 500;
+        }
+        &__list {
+            margin-bottom: -60px;
+            &-row {
+                flex-direction: column;
+                margin-bottom: 60px;
+                gap: 22px;
+                &:not(:last-child) {
+                    border-bottom: none;
+                }
+                &.history-title {
+                    display: none;
+                }
+            }
+        }
+        &__item {
+            width: 100%;
+            max-width: 500px;
+            padding: 0;
+            span {
+                display: flex;
+                margin-bottom: 14px;
+                font-size: 14px;
+            }
+        }
+    }
+}
