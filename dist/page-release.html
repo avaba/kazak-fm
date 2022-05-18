@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>gulp-scss-starter</title>
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+    <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+    <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+    <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+    <link rel="stylesheet" href="styles/main.min.css">
+</head>
+
+<body>
+    <div class="site bg bg-release">
+        <header class="header">
+    
+    <div class="header-main">
+    <div class="container-fluid">
+        <div class="row d-flex align-items-center">
+            <div class="header-main__logo">
+                <a href="/" class="header-main__logo--img">
+                    <svg class="header-main__logo--gen">
+                        <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                    </svg>
+                </a>
+                <a href="/">
+                    <svg class="header-main__descriptor">
+                        <use xlink:href="img/sprites/sprite.svg#descriptor"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="header-main__btns">
+                <div class="ether ether-xl">
+                    <div class="ether-xl__wrap">
+                        <button class="btn btn-live listen-live">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.116 20.087C4.84003 19.1599 3.80182 17.9437 3.08639 16.538C2.37097 15.1324 1.99867 13.5772 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22.0013 13.5772 21.629 15.1324 20.9136 16.538C20.1982 17.9437 19.16 19.1599 17.884 20.087L16.869 18.348C18.1954 17.3306 19.1698 15.9232 19.6552 14.3236C20.1407 12.724 20.1129 11.0125 19.5757 9.42947C19.0385 7.84648 18.0189 6.47153 16.6601 5.49776C15.3013 4.524 13.6717 4.00034 12 4.00034C10.3283 4.00034 8.69867 4.524 7.3399 5.49776C5.98114 6.47153 4.96154 7.84648 4.42434 9.42947C3.88714 11.0125 3.85932 12.724 4.34478 14.3236C4.83025 15.9232 5.80461 17.3306 7.131 18.348L6.116 20.087ZM8.15 16.602C7.20503 15.8114 6.52634 14.7491 6.20616 13.5594C5.88597 12.3696 5.9398 11.1102 6.36035 9.9521C6.78089 8.79403 7.54776 7.7935 8.55675 7.08644C9.56574 6.37939 10.7679 6.0001 12 6.0001C13.2321 6.0001 14.4343 6.37939 15.4433 7.08644C16.4523 7.7935 17.2191 8.79403 17.6397 9.9521C18.0602 11.1102 18.114 12.3696 17.7939 13.5594C17.4737 14.7491 16.795 15.8114 15.85 16.602L14.82 14.836C15.3818 14.2775 15.7651 13.5649 15.9214 12.7883C16.0777 12.0117 15.9998 11.2062 15.6978 10.4739C15.3957 9.74165 14.8831 9.11552 14.2248 8.67495C13.5664 8.23437 12.7921 7.99917 12 7.99917C11.2079 7.99917 10.4336 8.23437 9.77525 8.67495C9.11694 9.11552 8.60426 9.74165 8.30221 10.4739C8.00016 11.2062 7.92234 12.0117 8.07861 12.7883C8.23488 13.5649 8.61821 14.2775 9.18 14.836L8.15 16.602ZM11 13H13L14 22H10L11 13Z"
+                                  fill="#FF4026"/>
+                            </svg>
+                            Прямой эфир
+                        </button>
+                        <button class="btn btn-live wach-live">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4 12H7C7.53043 12 8.03914 12.2107 8.41421 12.5858C8.78929 12.9609 9 13.4696 9 14V19C9 19.5304 8.78929 20.0391 8.41421 20.4142C8.03914 20.7893 7.53043 21 7 21H4C3.46957 21 2.96086 20.7893 2.58579 20.4142C2.21071 20.0391 2 19.5304 2 19V12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21H17C16.4696 21 15.9609 20.7893 15.5858 20.4142C15.2107 20.0391 15 19.5304 15 19V14C15 13.4696 15.2107 12.9609 15.5858 12.5858C15.9609 12.2107 16.4696 12 17 12H20C20 9.87827 19.1571 7.84344 17.6569 6.34315C16.1566 4.84285 14.1217 4 12 4C9.87827 4 7.84344 4.84285 6.34315 6.34315C4.84285 7.84344 4 9.87827 4 12Z" fill="#FF4026"/>
+                            </svg>
+                            Смотреть
+                        </button>
+                        <a href="tel:+780934342342" class="btn btn-live">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21 16.42V19.956C21.0001 20.2092 20.9042 20.453 20.7316 20.6382C20.559 20.8234 20.3226 20.9363 20.07 20.954C19.633 20.984 19.276 21 19 21C10.163 21 3 13.837 3 5C3 4.724 3.015 4.367 3.046 3.93C3.06372 3.67744 3.17658 3.44101 3.3618 3.26841C3.54703 3.09581 3.79082 2.99989 4.044 3H7.58C7.70404 2.99987 7.8237 3.04586 7.91573 3.12902C8.00776 3.21218 8.0656 3.32658 8.078 3.45C8.101 3.68 8.122 3.863 8.142 4.002C8.34073 5.38892 8.748 6.73783 9.35 8.003C9.445 8.203 9.383 8.442 9.203 8.57L7.045 10.112C8.36445 13.1865 10.8145 15.6365 13.889 16.956L15.429 14.802C15.4919 14.714 15.5838 14.6509 15.6885 14.6237C15.7932 14.5964 15.9042 14.6068 16.002 14.653C17.267 15.2539 18.6156 15.6601 20.002 15.858C20.141 15.878 20.324 15.9 20.552 15.922C20.6752 15.9346 20.7894 15.9926 20.8724 16.0846C20.9553 16.1766 21.0012 16.2961 21.001 16.42H21Z" fill="#FF4026"/>
+                            </svg>
+                            8 800 555 35 35
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main__toolbars">
+                <div class="header-toolbar__wrap">
+                    <div class="header-toolbar__button header-toolbar__button--mail">
+                        <button>
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#mail"></use>
+                            </svg>
+                            <span>Написать нам</span>
+                        </button>
+
+                        <div class="header-toolbar__menu">
+                            <ul>
+                                <li><a href="#">Написать в студию</a></li>
+                                <li><a href="#">Проект «Сваха»</a></li>
+                                <li><a href="#">«Через годы, через расстояния»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                                <li><a href="#">Проект «Хорошо»</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-toolbar__button header-toolbar__button--search">
+                        <button>
+                            <svg>
+                                <use xlink:href="img/sprites/sprite.svg#search"></use>
+                            </svg>
+                            <span>Поиск</span>
+                        </button>
+
+                        <div class="header-toolbar__menu menu-search">
+                            <input type="text" class="header-toolbar__input">
+                            <ul>
+                                <li><a href="#">Акции и конкурсы</a></li>
+                                <li><a href="#">Акции и конкурсы</a></li>
+                                <li><a href="#">Акции и конкурсы</a></li>
+                                <li><a href="#">Акции и конкурсы</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="header-mobile__burger">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#burger"></use>
+                        </svg>
+                        Меню
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="header-menu">
+    <div class="container-fluid">
+        <nav>
+            <ul>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Передачи</a></li>
+                <li><a href="#">Подкасты</a></li>
+                <li><a href="#">Вещание</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Рекламодателям</a></li>
+                <li><a href="#">Акции и конкурсы</a></li>
+                <li><a href="#">Страница памяти</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="m-menu">
+    <div class="m-menu__ether">
+        <h2 class="m-menu__ether--title">Прямой эфир</h2>
+        <div class="row d-flex justify-content-center">
+            <div class="col-auto">
+                <button class="btn wach-live">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#video"></use>
+                    </svg>
+                    Смотреть
+                </button>
+            </div>
+            <div class="col-auto">
+                <button class="btn listen-live">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#audio"></use>
+                    </svg>
+                    Слушать
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <ul class="m-menu__menu">
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Передачи</a></li>
+        <li><a href="#">Вещание</a></li>
+        <li><a href="#">Подкасты</a></li>
+        <li><a href="#">События</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Акции и конкурсы</a></li>
+        <li><a href="#">Рекламодателям</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Страница памяти</a></li>
+    </ul>
+
+    <div class="m-menu__button">
+        <a href="tel:8 800 555 35 35">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#phone"></use>
+            </svg>
+            <span>Прямой эфир: 8 800 555 35 35</span>
+        </a>
+    </div>
+    <div class="m-menu__button">
+        <button class="m-menu__feedback">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#mail"></use>
+            </svg>
+            <span>Написать нам</span>
+        </button>
+
+        <div class="header-toolbar__menu">
+            <ul>
+                <li><a href="#">Написать в студию</a></li>
+                <li><a href="#">Проект «Сваха»</a></li>
+                <li><a href="#">«Через годы, через расстояния»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+                <li><a href="#">Проект «Хорошо»</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="m-menu__button">
+        <button>
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#search"></use>
+            </svg>
+            <span>Поиск</span>
+        </button>
+
+        <div class="header-toolbar__menu">
+            <ul>
+                <li><a href="#">Акции и конкурсы</a></li>
+                <li><a href="#">Акции и конкурсы</a></li>
+                <li><a href="#">Акции и конкурсы</a></li>
+                <li><a href="#">Акции и конкурсы</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="m-menu__social">
+        <a href="#" target="_blank">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#ok"></use>
+            </svg>
+        </a>
+        <a href="#" target="_blank">
+            <svg>
+                <use xlink:href="img/sprites/sprite.svg#youtube"></use>
+            </svg>
+        </a>
+    </div>
+</div>
+</header>
+
+<div class="header-player">
+    <div class="container-fluid">
+        <div class="player__content">
+            <div class="player__nav">
+                <button class="player__nav-btn player-prev">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#prev"></use>
+                    </svg>
+                </button>
+                <button class="player__nav-play">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#play"></use>
+                    </svg>
+                </button>
+                <button class="player__nav-btn player-next">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#next"></use>
+                    </svg>
+                </button>
+            </div>
+            <button class="player__btns-like">
+                <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.001 4.52901C14.35 2.42001 17.98 2.49001 20.243 4.75701C22.505 7.02501 22.583 10.637 20.479 12.993L11.999 21.485L3.52101 12.993C1.41701 10.637 1.49601 7.01901 3.75701 4.75701C6.02201 2.49301 9.64501 2.41701 12.001 4.52901ZM18.827 6.17001C17.327 4.66801 14.907 4.60701 13.337 6.01701L12.002 7.21501L10.666 6.01801C9.09101 4.60601 6.67601 4.66801 5.17201 6.17201C3.68201 7.66201 3.60701 10.047 4.98001 11.623L12 18.654L19.02 11.624C20.394 10.047 20.319 7.66501 18.827 6.17001Z" />
+                    <path d="M12.0013 2.28381C14.7418 -0.17669 18.9768 -0.0950233 21.617 2.54981C24.256 5.19581 24.347 9.40981 21.8923 12.1585L11.999 22.0658L2.108 12.1585C-0.346664 9.40981 -0.254497 5.18881 2.38334 2.54981C5.02584 -0.0915233 9.25267 -0.18019 12.0013 2.28381Z" />
+                </svg>
+            </button>
+            <div class="player__title">
+                <a href="#">Я - фермер</a> — Виноградарство, садоводство. КФХ Хуморов
+            </div>
+            <div class="player__progressbar">
+                <span id="start" class="player__progressbar--start"></span>
+                <span id="time" class="progressbar player__progressbar--progress"></span>
+                <span class="player__progressbar--end">24:00</span>
+            </div>
+            <div class="player__btns">
+                <div class="player__sound">
+                    <button class="player__sound-icon">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#sound"></use>
+                        </svg>
+                    </button>
+                    <div class="progressbar" id="sound"></div>
+                </div>
+            </div>
+            <div class="player__close">
+                <button id="player-close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.9995 10.172L22.8995 0.271973L25.7275 3.09997L15.8275 13L25.7275 22.9L22.8995 25.728L12.9995 15.828L3.09948 25.728L0.271484 22.9L10.1715 13L0.271484 3.09997L3.09948 0.271973L12.9995 10.172Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="video-player">
+    <div class="video-player__content">
+        <div class="video-player__frame">
+            <img src="/img/video.png" alt="">
+            <button class="video-play">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#play-white"></use>
+                </svg>
+            </button>
+            <div class="video-player__nav">
+                <button class="video-btn" id="full-screen">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#show-all"></use>
+                    </svg>
+                </button>
+                <button class="video-btn" id="video-close">
+                    <svg>
+                        <use xlink:href="img/sprites/sprite.svg#close-all"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div class="video-player__content">
+            <div class="video-player__progressbar">
+                <span class="time">01:10 / 05:35</span>
+                <span class="progressbar"></span>
+            </div>
+            <div class="video-player__title">
+                <span>Из первых уст</span>
+            </div>
+        </div>
+    </div>
+</div>
+        <div class="back-btn">
+    <div class="container-fluid">
+        <a class="btn btn-back" href="/news-page.html">К передаче</a>
+    </div>
+</div>
+        <div class="news-content release">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="news-content__img">
+                    <img class="news-content__img--img" src="/img/release.jpg" alt="">
+                    <img class="news-content__img--artefact" src="/img/release-artefact.svg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h1>Станицы и села.<br>В гостях Дмитрий Васильев</h1>
+                <p class="news-content__date">Выпуск от 9 февраля 2022, 10:25</p>
+
+                <div class="news-content__text">
+                    <p>Участковая больница в станице Спокойной обслуживает около 5,5 тысяч человек, в том числе 1137 детей.</p>
+                    <p>Здание построили в 1962 году. Капитальный ремонт в медучреждении сделали впервые. Работы провели в рамках программы «Модернизация первичного звена здравоохранения» национального проекта «Здравоохранение».</p>
+                    <p>В здании установили новую отопительную систему, обновили отделку первого и второго этажей, смонтировали фасадную плитку. На прилегающей территории провели благоустройство, сообщает пресс-служба администрации Краснодарского края.</p>
+                    <p>Участковая больница в станице Спокойной обслуживает около 5,5 тысяч человек, в том числе 1137 детей.</p>
+                    <p>Здание построили в 1962 году. Капитальный ремонт в медучреждении сделали впервые. Работы провели в рамках программы «Модернизация первичного звена здравоохранения» национального проекта «Здравоохранение».</p>
+                    <p>В здании установили новую отопительную систему, обновили отделку первого и второго этажей, смонтировали фасадную плитку. На прилегающей территории провели благоустройство, сообщает пресс-служба администрации Краснодарского края.</p>
+                    <p>Участковая больница в станице Спокойной обслуживает около 5,5 тысяч человек, в том числе 1137 детей.</p>
+                    <p>Здание построили в 1962 году. Капитальный ремонт в медучреждении сделали впервые. Работы провели в рамках программы «Модернизация первичного звена здравоохранения» национального проекта «Здравоохранение».</p>
+                    <p>В здании установили новую отопительную систему, обновили отделку первого и второго этажей, смонтировали фасадную плитку. На прилегающей территории провели благоустройство, сообщает пресс-служба администрации Краснодарского края.</p>
+                </div>
+
+                <div class="shape">
+    <p class="shape__title">Поделиться</p>
+    <div class="shape__list">
+        <a href="#">
+            <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.84709 22.9993C4.9587 22.9993 2.26623 22.0584 0 20.4349C1.9241 20.5743 5.31971 20.2404 7.43177 17.9841C4.25453 17.8208 2.82166 15.0916 2.63477 13.9252C2.90473 14.0419 4.19223 14.1818 4.91905 13.8553C1.26419 12.8289 0.703507 9.23659 0.828104 8.14024C1.51339 8.67675 2.6763 8.86336 3.13316 8.81671C-0.272506 6.0875 0.952702 1.98203 1.55492 1.09562C3.99895 4.88793 7.66179 7.01784 12.1932 7.13631C12.1078 6.71663 12.0626 6.27969 12.0626 5.83091C12.0626 2.61018 14.387 -0.000732422 17.2542 -0.000732422C18.7523 -0.000732422 20.1021 0.712021 21.0497 1.85211C22.0508 1.58937 23.5574 0.974335 24.2939 0.442472C23.9227 1.93537 22.7669 3.18076 22.0678 3.64234C22.0736 3.65805 22.0621 3.62657 22.0678 3.64234C22.6819 3.5383 24.3436 3.18064 25 2.68182C24.6754 3.52052 23.45 4.915 22.4444 5.69569C22.6315 14.9373 16.3183 22.9993 7.84709 22.9993Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.308 9.16835C20.0495 8.80297 19.9916 8.43312 20.1328 8.05838C20.4853 7.05858 25.6193 0.708388 23.4805 0.708388C22.0109 0.728735 20.2435 0.708388 18.8345 0.708388C18.573 0.774709 18.4037 0.917697 18.2978 1.20862C17.4739 3.18756 16.4657 5.60257 14.9881 7.15467C14.7937 7.31793 14.6725 7.31097 14.451 7.25059C13.4145 6.11391 14.5197 2.21958 13.8894 0.680795C13.7652 0.379589 13.4933 0.243543 13.2151 0.166936C11.8079 -0.182403 8.59402 0.0255345 8.06964 0.728735C7.91974 0.929758 7.89883 1.03946 8.00705 1.0575C8.50667 1.13961 8.86037 1.33603 9.06853 1.64656C9.46126 2.54744 9.75067 7.34624 8.59402 7.34624C7.43737 7.34624 5.57224 2.63674 5.05985 1.33118C4.9235 0.938083 4.57639 0.712719 4.21064 0.646195L0.788754 0.673453C0.187268 0.673453 -0.14889 0.982521 0.0642997 1.6052C1.84657 6.2136 5.74677 15.1462 11.7287 14.9226C12.3279 14.9226 13.3589 15.1622 13.8269 14.6211C14.47 13.7323 13.6856 12.1493 14.7885 11.5456C15.0666 11.3914 15.3549 11.5207 15.5939 11.7102C16.8206 12.6832 17.4719 14.391 18.9847 14.9094C19.2507 15.0007 19.4838 15.0236 19.6839 14.9779L22.8808 14.9232C23.4744 14.9232 24.0591 14.6481 23.9362 13.909C23.4702 12.3239 21.6129 10.6945 20.308 9.16835Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="14" height="24" viewBox="0 0 14 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.2219 6.19334C13.2219 9.6077 10.4249 12.3851 6.98416 12.3851C3.54415 12.3851 0.74646 9.6077 0.74646 6.19334C0.74646 2.77786 3.54415 -0.000244141 6.98416 -0.000244141C10.4249 -0.000244141 13.2219 2.77786 13.2219 6.19334ZM9.56689 6.19332C9.56689 4.77925 8.4084 3.6294 6.98417 3.6294C5.56107 3.6294 4.40146 4.77925 4.40146 6.19332C4.40146 7.60627 5.56107 8.75687 6.98417 8.75687C8.4084 8.75687 9.56689 7.60627 9.56689 6.19332Z" fill="#CFCFCF"/>
+                <path d="M9.52385 17.4401C10.7936 17.1529 12.0181 16.6541 13.146 15.9508C13.9996 15.4164 14.2567 14.2962 13.7189 13.4487C13.1815 12.5994 12.0539 12.3437 11.1989 12.8781C8.64379 14.4733 5.35419 14.473 2.80058 12.8781C1.94553 12.3437 0.817641 12.5994 0.281317 13.4487C-0.256499 14.2969 -9.40442e-05 15.4164 0.853471 15.9508C1.98136 16.6534 3.20591 17.1529 4.47562 17.4401L0.988205 20.9026C0.275346 21.6111 0.275346 22.7599 0.988951 23.4684C1.34613 23.8223 1.8134 23.9994 2.28068 23.9994C2.74871 23.9994 3.21673 23.8223 3.57391 23.4684L6.99936 20.0659L10.4278 23.4684C11.1407 24.1769 12.2973 24.1769 13.0109 23.4684C13.7252 22.7599 13.7252 21.6104 13.0109 20.9026L9.52385 17.4401Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="22" height="21" viewBox="0 0 22 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.9815 1.81294C22.153 0.604733 21.0999 -0.348914 20.1152 0.122749L0.501625 9.51702C-0.204561 9.85526 -0.152905 11.0221 0.579517 11.2766L4.62433 12.6818C5.3963 12.95 6.23222 12.8113 6.90633 12.3032L16.0256 5.43017C16.3006 5.2229 16.6003 5.64945 16.3654 5.9137L9.80115 13.2967C9.16439 14.0129 9.29078 15.2265 10.0567 15.7505L17.4061 20.7782C18.2304 21.3421 19.2908 20.7756 19.445 19.689L21.9815 1.81294Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="12" height="24" viewBox="0 0 12 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11.2137 13.3978L11.8356 9.08714H7.94522V6.29102C7.94522 5.11143 8.48767 3.96092 10.2302 3.96092H12V0.291018C12 0.291018 10.3945 -0.000244141 8.86027 -0.000244141C5.65484 -0.000244141 3.56167 2.06478 3.56167 5.8017V9.08714H0V13.3978H3.56167V23.8192C4.27671 23.9386 5.00824 23.9998 5.75344 23.9998C6.49864 23.9998 7.23017 23.9386 7.94522 23.8192V13.3978H11.2137Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+        <a href="#">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M13 26C20.1797 26 26 20.1797 26 13C26 5.8203 20.1797 0 13 0C5.8203 0 0 5.8203 0 13C0 15.3315 0.613783 17.5197 1.68858 19.4118L0 26L6.79237 24.425C8.63699 25.4293 10.7519 26 13 26ZM13 24C19.0751 24 24 19.0751 24 13C24 6.92487 19.0751 2 13 2C6.92487 2 2 6.92487 2 13C2 15.3456 2.73418 17.5198 3.98528 19.3052L3 23L6.75993 22.06C8.53298 23.2835 10.6828 24 13 24Z" fill="#CFCFCF"/>
+                <path d="M9.75002 6.96359C9.44093 6.34277 8.96678 6.39773 8.48777 6.39773C7.63171 6.39773 6.29687 7.42313 6.29688 9.33151C6.29688 10.8955 6.98606 12.6076 9.30839 15.1687C11.5496 17.6403 14.4944 18.9189 16.9392 18.8754C19.3839 18.8318 19.8869 16.728 19.8869 16.0176C19.8869 15.7027 19.6915 15.5455 19.5569 15.5029C18.7238 15.103 17.1872 14.358 16.8376 14.2181C16.488 14.0781 16.3055 14.2674 16.192 14.3704C15.8749 14.6726 15.2464 15.563 15.0313 15.7633C14.8161 15.9635 14.4953 15.8622 14.3618 15.7865C13.8705 15.5893 12.5384 14.9968 11.4766 13.9676C10.1635 12.6946 10.0864 12.2567 9.83905 11.8668C9.64113 11.555 9.78637 11.3636 9.85884 11.28C10.1418 10.9535 10.5324 10.4495 10.7076 10.1991C10.8828 9.94862 10.7437 9.56835 10.6603 9.33151C10.3014 8.31292 9.99729 7.46024 9.75002 6.96359Z" fill="#CFCFCF"/>
+            </svg>
+        </a>
+    </div>
+</div>
+                <div class="release__btns">
+                    <a href="#" class="btn">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#watch"></use>
+                        </svg>
+                        Смотреть</a>
+                    <a href="#" class="btn">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#hear"></use>
+                        </svg>
+                        Слушать</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="section release-slider">
+    <div class="release__slider">
+        <div class="release__slide">
+            <img src="/img/release.jpg" alt="">
+        </div>
+        <div class="release__slide">
+            <img src="/img/release.jpg" alt="">
+        </div>
+        <div class="release__slide">
+            <img src="/img/release.jpg" alt="">
+        </div>
+        <div class="release__slide">
+            <img src="/img/release.jpg" alt="">
+        </div>
+        <div class="release__slide">
+            <img src="/img/release.jpg" alt="">
+        </div>
+    </div>
+</section>
+
+    <div class="container-fluid separator-wrap">
+        <div class="separator__content">
+            <div class="separator"></div>
+        </div>
+    </div>
+    <section class="news section">
+    <div class="container-fluid">
+
+        <div class="news__header">
+            <h2 class="section__title">Последние выпуски</h2>
+
+            <div class="news__btn">
+                <a href="#" class="btn btn-outline">Читать все новости</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+    <div class="container-fluid separator-wrap">
+        <div class="separator__content">
+            <div class="separator"></div>
+        </div>
+    </div>
+
+    <section class="news section">
+    <div class="container-fluid">
+
+        <div class="news__header">
+            <h2 class="section__title">Другие передачи</h2>
+
+            <div class="news__btn">
+                <a href="#" class="btn btn-outline">Читать все новости</a>
+            </div>
+        </div>
+
+        <div class="news-slider">
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+            <div class="news-slider__item">
+                <div class="card-news wow animate animate__fadeInUp" data-wow-duration="0.5s">
+    <a href="/news-post.html" class="card-news__img">
+        <img src="/img/news.png" alt="">
+    </a>
+    <div class="card-news__content">
+        <a href="/news-post.html" class="card-news__title">В станице Холмской Абинском районе появится новая зона отдыха</a>
+        <p class="card-news__text">Общественную территорию по улице Мира, 2 благоустроят до конца года. Ее выбрали местные жители в ходе
+            рейтингового голосования. </p>
+    </div>
+
+    <div class="card-news__date">17.06.2021 г.</div>
+</div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+</div>
+        <footer class="footer">
+    <div class="separator__content">
+        <div class="separator"></div>
+    </div>
+    <div class="footer__wrap">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-stretch">
+                <div class="col-md-2 footer__first">
+                    <a class="footer__logo" href="/">
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#logo"></use>
+                        </svg>
+                    </a>
+                    <div class="footer__logo-text">
+                        <img src="/img/logo-text.svg" alt="">
+                    </div>
+                    <div class="footer__social">
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M36.9365 9.42654C35.6641 9.98937 34.3148 10.359 32.9332 10.5232C34.3894 9.65227 35.4794 8.28157 35.9998 6.66654C34.6332 7.47988 33.1348 8.04988 31.5732 8.35821C30.5242 7.23584 29.1338 6.49148 27.6181 6.24085C26.1024 5.99022 24.5464 6.24736 23.192 6.9723C21.8375 7.69724 20.7605 8.84935 20.1284 10.2495C19.4962 11.6497 19.3444 13.2195 19.6965 14.7149C16.925 14.576 14.2137 13.8557 11.7387 12.601C9.26358 11.3462 7.08006 9.58496 5.32984 7.43154C4.71033 8.49563 4.38477 9.70525 4.38651 10.9365C4.38651 13.3532 5.61651 15.4882 7.48651 16.7382C6.37986 16.7034 5.29756 16.4045 4.32984 15.8665V15.9532C4.33018 17.5627 4.88713 19.1226 5.90626 20.3683C6.92539 21.614 8.34398 22.469 9.92151 22.7882C8.8942 23.0666 7.81702 23.1076 6.77151 22.9082C7.21629 24.2936 8.08319 25.5052 9.25083 26.3734C10.4185 27.2416 11.8284 27.7229 13.2832 27.7499C11.8373 28.8854 10.1818 29.7248 8.41131 30.2202C6.64082 30.7155 4.79006 30.857 2.96484 30.6365C6.15101 32.6856 9.86 33.7734 13.6482 33.7699C26.4698 33.7699 33.4815 23.1482 33.4815 13.9365C33.4815 13.6365 33.4732 13.3332 33.4598 13.0365C34.8246 12.0502 36.0025 10.8282 36.9382 9.42821L36.9365 9.42654Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.9057 10.8298C36.6673 13.7998 36.6673 19.9998 36.6673 19.9998C36.6673 19.9998 36.6673 26.1998 35.9057 29.1698C35.4823 30.8115 34.244 32.1032 32.6757 32.5398C29.8273 33.3332 20.0007 33.3332 20.0007 33.3332C20.0007 33.3332 10.179 33.3332 7.32565 32.5398C5.75065 32.0965 4.51398 30.8065 4.09565 29.1698C3.33398 26.1998 3.33398 19.9998 3.33398 19.9998C3.33398 19.9998 3.33398 13.7998 4.09565 10.8298C4.51898 9.18817 5.75732 7.8965 7.32565 7.45984C10.179 6.6665 20.0007 6.6665 20.0007 6.6665C20.0007 6.6665 29.8273 6.6665 32.6757 7.45984C34.2507 7.90317 35.4873 9.19317 35.9057 10.8298ZM16.6673 25.8332L26.6673 19.9998L16.6673 14.1665V25.8332Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0007 3.3335C24.529 3.3335 25.094 3.35016 26.8707 3.4335C28.6457 3.51683 29.854 3.79516 30.9173 4.2085C32.0173 4.63183 32.944 5.20516 33.8707 6.13016C34.7181 6.96332 35.3739 7.97114 35.7923 9.0835C36.204 10.1452 36.484 11.3552 36.5673 13.1302C36.6457 14.9068 36.6673 15.4718 36.6673 20.0002C36.6673 24.5285 36.6507 25.0935 36.5673 26.8702C36.484 28.6452 36.204 29.8535 35.7923 30.9168C35.3751 32.0298 34.7192 33.0379 33.8707 33.8702C33.0373 34.7174 32.0295 35.3731 30.9173 35.7918C29.8557 36.2035 28.6457 36.4835 26.8707 36.5668C25.094 36.6452 24.529 36.6668 20.0007 36.6668C15.4723 36.6668 14.9073 36.6502 13.1307 36.5668C11.3557 36.4835 10.1473 36.2035 9.08398 35.7918C7.97119 35.3743 6.9632 34.7184 6.13065 33.8702C5.283 33.0371 4.6272 32.0293 4.20898 30.9168C3.79565 29.8552 3.51732 28.6452 3.43398 26.8702C3.35565 25.0935 3.33398 24.5285 3.33398 20.0002C3.33398 15.4718 3.35065 14.9068 3.43398 13.1302C3.51732 11.3535 3.79565 10.1468 4.20898 9.0835C4.62604 7.97046 5.28199 6.96236 6.13065 6.13016C6.96344 5.28221 7.97137 4.62638 9.08398 4.2085C10.1473 3.79516 11.354 3.51683 13.1307 3.4335C14.9073 3.35516 15.4723 3.3335 20.0007 3.3335ZM20.0007 11.6668C17.7905 11.6668 15.6709 12.5448 14.1081 14.1076C12.5453 15.6704 11.6673 17.79 11.6673 20.0002C11.6673 22.2103 12.5453 24.3299 14.1081 25.8927C15.6709 27.4555 17.7905 28.3335 20.0007 28.3335C22.2108 28.3335 24.3304 27.4555 25.8932 25.8927C27.456 24.3299 28.334 22.2103 28.334 20.0002C28.334 17.79 27.456 15.6704 25.8932 14.1076C24.3304 12.5448 22.2108 11.6668 20.0007 11.6668ZM30.834 11.2502C30.834 10.6976 30.6145 10.1677 30.2238 9.77702C29.8331 9.38632 29.3032 9.16683 28.7507 9.16683C28.1981 9.16683 27.6682 9.38632 27.2775 9.77702C26.8868 10.1677 26.6673 10.6976 26.6673 11.2502C26.6673 11.8027 26.8868 12.3326 27.2775 12.7233C27.6682 13.114 28.1981 13.3335 28.7507 13.3335C29.3032 13.3335 29.8331 13.114 30.2238 12.7233C30.6145 12.3326 30.834 11.8027 30.834 11.2502ZM20.0007 15.0002C21.3267 15.0002 22.5985 15.5269 23.5362 16.4646C24.4739 17.4023 25.0007 18.6741 25.0007 20.0002C25.0007 21.3262 24.4739 22.598 23.5362 23.5357C22.5985 24.4734 21.3267 25.0002 20.0007 25.0002C18.6746 25.0002 17.4028 24.4734 16.4651 23.5357C15.5274 22.598 15.0007 21.3262 15.0007 20.0002C15.0007 18.6741 15.5274 17.4023 16.4651 16.4646C17.4028 15.5269 18.6746 15.0002 20.0007 15.0002Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.0007 3.3335C10.7957 3.3335 3.33398 10.7952 3.33398 20.0002C3.33398 28.3185 9.42898 35.2135 17.3973 36.4652V24.8168H13.164V20.0002H17.3973V16.3285C17.3973 12.1518 19.884 9.84516 23.6923 9.84516C25.5157 9.84516 27.4223 10.1702 27.4223 10.1702V14.2702H25.3223C23.2507 14.2702 22.6057 15.5552 22.6057 16.8735V20.0002H27.2273L26.489 24.8168H22.6057V36.4652C30.5723 35.2152 36.6673 28.3168 36.6673 20.0002C36.6673 10.7952 29.2057 3.3335 20.0007 3.3335Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5958 20.0201C36.5958 29.2973 29.0752 36.818 19.7979 36.818C16.893 36.818 14.1603 36.0806 11.7767 34.7828L3 36.818L5.1819 28.305C3.7931 25.8602 3 23.0328 3 20.0201C3 10.7429 10.5207 3.22217 19.7979 3.22217C29.0752 3.22217 36.5958 10.7429 36.5958 20.0201ZM14.1073 11.4886C14.6776 11.4837 15.2292 11.4789 15.5985 12.2206C15.918 12.8624 16.3109 13.9642 16.7747 15.2803L16.7807 15.2974C16.889 15.6044 17.058 16.0837 16.8358 16.4014C16.6095 16.725 16.1047 17.3762 15.7391 17.7981C15.6455 17.9061 15.4578 18.1534 15.7135 18.5564C15.7771 18.6565 15.832 18.7592 15.8924 18.8723C16.136 19.3279 16.4702 19.9531 17.8295 21.2708C19.2015 22.6008 20.9227 23.3664 21.5575 23.6211C21.73 23.7189 22.1446 23.8499 22.4226 23.5911C22.5505 23.4721 22.7914 23.1644 23.0541 22.8288C23.3626 22.4348 23.7012 22.0022 23.9224 21.7913C23.9291 21.7853 23.936 21.779 23.943 21.7725C24.091 21.6369 24.3255 21.4219 24.7567 21.5945C25.1342 21.7456 26.5828 22.4427 27.6769 22.9692C27.8921 23.0728 28.0935 23.1697 28.2704 23.2546C28.4444 23.3098 28.6969 23.5128 28.6969 23.9197C28.6969 24.8377 28.0469 27.5561 24.8879 27.6124C21.729 27.6686 17.9238 26.0165 15.0278 22.8228C12.027 19.5135 11.1365 17.3013 11.1365 15.2803C11.1365 12.8144 12.8613 11.4895 13.9675 11.4895C14.0141 11.4895 14.0608 11.489 14.1073 11.4886Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                        <a href="#">
+                            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.7696 21.8347C31.4034 21.3231 31.3214 20.8053 31.5215 20.2807C32.0209 18.881 39.2939 9.99072 36.2641 9.99072C34.1821 10.0192 31.6783 9.99072 29.6823 9.99072C29.3117 10.0836 29.0719 10.2837 28.9219 10.691C27.7547 13.4616 26.3264 16.8426 24.2331 19.0155C23.9577 19.2441 23.786 19.2343 23.4723 19.1498C22.0039 17.5585 23.5696 12.1064 22.6767 9.95209C22.5007 9.5304 22.1155 9.33994 21.7213 9.23268C19.7278 8.74361 15.1749 9.03472 14.432 10.0192C14.2196 10.3006 14.19 10.4542 14.3433 10.4795C15.0511 10.5944 15.5522 10.8694 15.8471 11.3042C16.4034 12.5654 16.8135 19.2837 15.1749 19.2837C13.5363 19.2837 10.894 12.6904 10.1681 10.8626C9.97495 10.3123 9.48321 9.99678 8.96508 9.90365L4.1174 9.94181C3.2653 9.94181 2.78907 10.3745 3.09109 11.2462C5.61597 17.698 11.1413 30.2037 19.6157 29.8906C20.4646 29.8906 21.925 30.2261 22.5881 29.4685C23.4992 28.2241 22.388 26.008 23.9504 25.1628C24.3444 24.947 24.7528 25.1279 25.0913 25.3933C26.8292 26.7554 27.7519 29.1464 29.895 29.8722C30.2718 30 30.602 30.032 30.8855 29.9681L35.4145 29.8915C36.2554 29.8915 37.0837 29.5064 36.9097 28.4715C36.2494 26.2524 33.6183 23.9712 31.7696 21.8347Z" fill="#CFCFCF" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="footer__dev">
+                        <p>Разработано: <a href="#">design&code</a></p>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-md-1 d-flex footer__center">
+                    <div class="row d-flex align-items-stretch">
+                        <div class="col-md-6">
+                            <div class="footer__col">
+                                <h4 class="footer__title">Контакты</h4>
+                                <p>
+                                    Краснодар, ул. Северная, 279 <br>
+                                    Сотрудничество – kazakfm@gmail.com <br>
+                                    Новости и пресс-релизы – dfm@dfm.ru
+                                </p>
+
+                                <div class="footer__social">
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M36.9365 9.42654C35.6641 9.98937 34.3148 10.359 32.9332 10.5232C34.3894 9.65227 35.4794 8.28157 35.9998 6.66654C34.6332 7.47988 33.1348 8.04988 31.5732 8.35821C30.5242 7.23584 29.1338 6.49148 27.6181 6.24085C26.1024 5.99022 24.5464 6.24736 23.192 6.9723C21.8375 7.69724 20.7605 8.84935 20.1284 10.2495C19.4962 11.6497 19.3444 13.2195 19.6965 14.7149C16.925 14.576 14.2137 13.8557 11.7387 12.601C9.26358 11.3462 7.08006 9.58496 5.32984 7.43154C4.71033 8.49563 4.38477 9.70525 4.38651 10.9365C4.38651 13.3532 5.61651 15.4882 7.48651 16.7382C6.37986 16.7034 5.29756 16.4045 4.32984 15.8665V15.9532C4.33018 17.5627 4.88713 19.1226 5.90626 20.3683C6.92539 21.614 8.34398 22.469 9.92151 22.7882C8.8942 23.0666 7.81702 23.1076 6.77151 22.9082C7.21629 24.2936 8.08319 25.5052 9.25083 26.3734C10.4185 27.2416 11.8284 27.7229 13.2832 27.7499C11.8373 28.8854 10.1818 29.7248 8.41131 30.2202C6.64082 30.7155 4.79006 30.857 2.96484 30.6365C6.15101 32.6856 9.86 33.7734 13.6482 33.7699C26.4698 33.7699 33.4815 23.1482 33.4815 13.9365C33.4815 13.6365 33.4732 13.3332 33.4598 13.0365C34.8246 12.0502 36.0025 10.8282 36.9382 9.42821L36.9365 9.42654Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M35.9057 10.8298C36.6673 13.7998 36.6673 19.9998 36.6673 19.9998C36.6673 19.9998 36.6673 26.1998 35.9057 29.1698C35.4823 30.8115 34.244 32.1032 32.6757 32.5398C29.8273 33.3332 20.0007 33.3332 20.0007 33.3332C20.0007 33.3332 10.179 33.3332 7.32565 32.5398C5.75065 32.0965 4.51398 30.8065 4.09565 29.1698C3.33398 26.1998 3.33398 19.9998 3.33398 19.9998C3.33398 19.9998 3.33398 13.7998 4.09565 10.8298C4.51898 9.18817 5.75732 7.8965 7.32565 7.45984C10.179 6.6665 20.0007 6.6665 20.0007 6.6665C20.0007 6.6665 29.8273 6.6665 32.6757 7.45984C34.2507 7.90317 35.4873 9.19317 35.9057 10.8298ZM16.6673 25.8332L26.6673 19.9998L16.6673 14.1665V25.8332Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.0007 3.3335C24.529 3.3335 25.094 3.35016 26.8707 3.4335C28.6457 3.51683 29.854 3.79516 30.9173 4.2085C32.0173 4.63183 32.944 5.20516 33.8707 6.13016C34.7181 6.96332 35.3739 7.97114 35.7923 9.0835C36.204 10.1452 36.484 11.3552 36.5673 13.1302C36.6457 14.9068 36.6673 15.4718 36.6673 20.0002C36.6673 24.5285 36.6507 25.0935 36.5673 26.8702C36.484 28.6452 36.204 29.8535 35.7923 30.9168C35.3751 32.0298 34.7192 33.0379 33.8707 33.8702C33.0373 34.7174 32.0295 35.3731 30.9173 35.7918C29.8557 36.2035 28.6457 36.4835 26.8707 36.5668C25.094 36.6452 24.529 36.6668 20.0007 36.6668C15.4723 36.6668 14.9073 36.6502 13.1307 36.5668C11.3557 36.4835 10.1473 36.2035 9.08398 35.7918C7.97119 35.3743 6.9632 34.7184 6.13065 33.8702C5.283 33.0371 4.6272 32.0293 4.20898 30.9168C3.79565 29.8552 3.51732 28.6452 3.43398 26.8702C3.35565 25.0935 3.33398 24.5285 3.33398 20.0002C3.33398 15.4718 3.35065 14.9068 3.43398 13.1302C3.51732 11.3535 3.79565 10.1468 4.20898 9.0835C4.62604 7.97046 5.28199 6.96236 6.13065 6.13016C6.96344 5.28221 7.97137 4.62638 9.08398 4.2085C10.1473 3.79516 11.354 3.51683 13.1307 3.4335C14.9073 3.35516 15.4723 3.3335 20.0007 3.3335ZM20.0007 11.6668C17.7905 11.6668 15.6709 12.5448 14.1081 14.1076C12.5453 15.6704 11.6673 17.79 11.6673 20.0002C11.6673 22.2103 12.5453 24.3299 14.1081 25.8927C15.6709 27.4555 17.7905 28.3335 20.0007 28.3335C22.2108 28.3335 24.3304 27.4555 25.8932 25.8927C27.456 24.3299 28.334 22.2103 28.334 20.0002C28.334 17.79 27.456 15.6704 25.8932 14.1076C24.3304 12.5448 22.2108 11.6668 20.0007 11.6668ZM30.834 11.2502C30.834 10.6976 30.6145 10.1677 30.2238 9.77702C29.8331 9.38632 29.3032 9.16683 28.7507 9.16683C28.1981 9.16683 27.6682 9.38632 27.2775 9.77702C26.8868 10.1677 26.6673 10.6976 26.6673 11.2502C26.6673 11.8027 26.8868 12.3326 27.2775 12.7233C27.6682 13.114 28.1981 13.3335 28.7507 13.3335C29.3032 13.3335 29.8331 13.114 30.2238 12.7233C30.6145 12.3326 30.834 11.8027 30.834 11.2502ZM20.0007 15.0002C21.3267 15.0002 22.5985 15.5269 23.5362 16.4646C24.4739 17.4023 25.0007 18.6741 25.0007 20.0002C25.0007 21.3262 24.4739 22.598 23.5362 23.5357C22.5985 24.4734 21.3267 25.0002 20.0007 25.0002C18.6746 25.0002 17.4028 24.4734 16.4651 23.5357C15.5274 22.598 15.0007 21.3262 15.0007 20.0002C15.0007 18.6741 15.5274 17.4023 16.4651 16.4646C17.4028 15.5269 18.6746 15.0002 20.0007 15.0002Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M20.0007 3.3335C10.7957 3.3335 3.33398 10.7952 3.33398 20.0002C3.33398 28.3185 9.42898 35.2135 17.3973 36.4652V24.8168H13.164V20.0002H17.3973V16.3285C17.3973 12.1518 19.884 9.84516 23.6923 9.84516C25.5157 9.84516 27.4223 10.1702 27.4223 10.1702V14.2702H25.3223C23.2507 14.2702 22.6057 15.5552 22.6057 16.8735V20.0002H27.2273L26.489 24.8168H22.6057V36.4652C30.5723 35.2152 36.6673 28.3168 36.6673 20.0002C36.6673 10.7952 29.2057 3.3335 20.0007 3.3335Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.5958 20.0201C36.5958 29.2973 29.0752 36.818 19.7979 36.818C16.893 36.818 14.1603 36.0806 11.7767 34.7828L3 36.818L5.1819 28.305C3.7931 25.8602 3 23.0328 3 20.0201C3 10.7429 10.5207 3.22217 19.7979 3.22217C29.0752 3.22217 36.5958 10.7429 36.5958 20.0201ZM14.1073 11.4886C14.6776 11.4837 15.2292 11.4789 15.5985 12.2206C15.918 12.8624 16.3109 13.9642 16.7747 15.2803L16.7807 15.2974C16.889 15.6044 17.058 16.0837 16.8358 16.4014C16.6095 16.725 16.1047 17.3762 15.7391 17.7981C15.6455 17.9061 15.4578 18.1534 15.7135 18.5564C15.7771 18.6565 15.832 18.7592 15.8924 18.8723C16.136 19.3279 16.4702 19.9531 17.8295 21.2708C19.2015 22.6008 20.9227 23.3664 21.5575 23.6211C21.73 23.7189 22.1446 23.8499 22.4226 23.5911C22.5505 23.4721 22.7914 23.1644 23.0541 22.8288C23.3626 22.4348 23.7012 22.0022 23.9224 21.7913C23.9291 21.7853 23.936 21.779 23.943 21.7725C24.091 21.6369 24.3255 21.4219 24.7567 21.5945C25.1342 21.7456 26.5828 22.4427 27.6769 22.9692C27.8921 23.0728 28.0935 23.1697 28.2704 23.2546C28.4444 23.3098 28.6969 23.5128 28.6969 23.9197C28.6969 24.8377 28.0469 27.5561 24.8879 27.6124C21.729 27.6686 17.9238 26.0165 15.0278 22.8228C12.027 19.5135 11.1365 17.3013 11.1365 15.2803C11.1365 12.8144 12.8613 11.4895 13.9675 11.4895C14.0141 11.4895 14.0608 11.489 14.1073 11.4886Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31.7696 21.8347C31.4034 21.3231 31.3214 20.8053 31.5215 20.2807C32.0209 18.881 39.2939 9.99072 36.2641 9.99072C34.1821 10.0192 31.6783 9.99072 29.6823 9.99072C29.3117 10.0836 29.0719 10.2837 28.9219 10.691C27.7547 13.4616 26.3264 16.8426 24.2331 19.0155C23.9577 19.2441 23.786 19.2343 23.4723 19.1498C22.0039 17.5585 23.5696 12.1064 22.6767 9.95209C22.5007 9.5304 22.1155 9.33994 21.7213 9.23268C19.7278 8.74361 15.1749 9.03472 14.432 10.0192C14.2196 10.3006 14.19 10.4542 14.3433 10.4795C15.0511 10.5944 15.5522 10.8694 15.8471 11.3042C16.4034 12.5654 16.8135 19.2837 15.1749 19.2837C13.5363 19.2837 10.894 12.6904 10.1681 10.8626C9.97495 10.3123 9.48321 9.99678 8.96508 9.90365L4.1174 9.94181C3.2653 9.94181 2.78907 10.3745 3.09109 11.2462C5.61597 17.698 11.1413 30.2037 19.6157 29.8906C20.4646 29.8906 21.925 30.2261 22.5881 29.4685C23.4992 28.2241 22.388 26.008 23.9504 25.1628C24.3444 24.947 24.7528 25.1279 25.0913 25.3933C26.8292 26.7554 27.7519 29.1464 29.895 29.8722C30.2718 30 30.602 30.032 30.8855 29.9681L35.4145 29.8915C36.2554 29.8915 37.0837 29.5064 36.9097 28.4715C36.2494 26.2524 33.6183 23.9712 31.7696 21.8347Z" fill="#CFCFCF" />
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="footer__col">
+                                <h4 class="footer__title">Телефон рекламной службы</h4>
+                                <a href="tel:88612055775">8 861 205 57 75</a>
+
+                                <div class="footer__search">
+                                    <div class="header-toolbar__button header-toolbar__button--search">
+                                        <button>
+                                            <svg>
+                                                <use xlink:href="img/sprites/sprite.svg#search"></use>
+                                            </svg>
+                                            <span>Поиск</span>
+                                        </button>
+
+                                        <div class="header-toolbar__menu">
+                                            <ul>
+                                                <li><a href="#">Акции и конкурсы</a></li>
+                                                <li><a href="#">Акции и конкурсы</a></li>
+                                                <li><a href="#">Акции и конкурсы</a></li>
+                                                <li><a href="#">Акции и конкурсы</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="footer-tel__mobile header-toolbar__button">
+                                    <a href="tel:8 800 555 35 35">
+                                        <svg>
+                                            <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                                        </svg>
+                                        <span>Прямой эфир: 8 800 555 35 35</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer__separator">
+                        <img src="/img/footer.svg" alt="">
+                    </div>
+
+                    <div class="row footer__links">
+                        <div class="col-md-6 footer__polit">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                        <p>Разработано: design&code</p>
+                        <div class="col-md-6">
+                            <div class="header-toolbar__button">
+                                <a href="tel:8 800 555 35 35">
+                                    <svg>
+                                        <use xlink:href="img/sprites/sprite.svg#phone"></use>
+                                    </svg>
+                                    <span>Прямой эфир: 8 800 555 35 35</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <h4 class="footer__title">Меню</h4>
+                    <div class="footer__menu">
+                        <ul>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="#">Передачи</a></li>
+                            <li><a href="#">Страница памяти</a></li>
+                            <li><a href="#">Подкасты</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Вещание</a></li>
+                            <li><a href="#">События</a></li>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Акции и конкурсы</a></li>
+                            <li><a href="#">Рекламодателям</a></li>
+                            <li><a href="#">Страница памяти</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="popup popup__feedback">
+    <div class="popup__content">
+        <div class="popup__body">
+            <div class="popup__close">
+                <svg>
+                    <use xlink:href="img/sprites/sprite.svg#close-tr"></use>
+                </svg>
+            </div>
+            <div class="popup__text">
+                <h2>Отправить заявку</h2>
+                <p class="popup__feedback-name">Передача <a href="#">«Варенички»</a></p>
+                <div class="popup__form">
+                    <form action="#" class="form">
+                        <label for="">
+                            <input type="text" class="form__input" placeholder="Ваше имя">
+                        </label>
+                        <label for="">
+                            <input type="text" class="form__input" placeholder="Номер телефона">
+                        </label>
+                        <label for="">
+                            <textarea class="form__textarea" placeholder="Текст поздравления"></textarea>
+                        </label>
+                        <div class="form__footer">
+                            <input type="submit" class="btn" value="Отправить заявку">
+                            <p>Нажимая кнопку, вы соглашаетесь<br>с <a href="#">политикой конфиденциальности</a> сайта</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
