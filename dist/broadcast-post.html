@@ -97,22 +97,10 @@
                         </div>
                     </div>
                     <div class="header-toolbar__button header-toolbar__button--search">
-                        <button>
-                            <svg>
-                                <use xlink:href="img/sprites/sprite.svg#search"></use>
-                            </svg>
-                            <span>Поиск</span>
-                        </button>
-
-                        <div class="header-toolbar__menu menu-search">
-                            <input type="text" class="header-toolbar__input">
-                            <ul>
-                                <li><a href="#">Акции и конкурсы</a></li>
-                                <li><a href="#">Акции и конкурсы</a></li>
-                                <li><a href="#">Акции и конкурсы</a></li>
-                                <li><a href="#">Акции и конкурсы</a></li>
-                            </ul>
-                        </div>
+                        <svg>
+                            <use xlink:href="img/sprites/sprite.svg#search"></use>
+                        </svg>
+                        <input placeholder="Поиск" />
                     </div>
                     <button class="header-mobile__burger">
                         <svg>
@@ -188,6 +176,7 @@
             <span>Прямой эфир: 8 800 555 35 35</span>
         </a>
     </div>
+
     <div class="m-menu__button">
         <button class="m-menu__feedback">
             <svg>
@@ -210,21 +199,13 @@
             </ul>
         </div>
     </div>
+
     <div class="m-menu__button">
-        <button>
+        <div class="header-toolbar__button--search">
             <svg>
                 <use xlink:href="img/sprites/sprite.svg#search"></use>
             </svg>
-            <span>Поиск</span>
-        </button>
-
-        <div class="header-toolbar__menu">
-            <ul>
-                <li><a href="#">Акции и конкурсы</a></li>
-                <li><a href="#">Акции и конкурсы</a></li>
-                <li><a href="#">Акции и конкурсы</a></li>
-                <li><a href="#">Акции и конкурсы</a></li>
-            </ul>
+            <input placeholder="Поиск" />
         </div>
     </div>
 
@@ -558,7 +539,7 @@
     </div>
 
     <div class="news__btn">
-        <a href="#" class="btn btn-wave">Читать все</a>
+        <a href="#" class="btn btn-outline">Читать все</a>
     </div>
     </div>
 </section>
@@ -616,7 +597,7 @@
             
         </div>
         <div class="live__btn">
-            <a href="#" class="btn btn-wave">Показать больше</a>
+            <a href="#" class="btn btn-outline">Показать больше</a>
         </div>
         <div class="live__video">
             <iframe src="https://www.youtube.com/embed/nTpprNkat_s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -692,7 +673,7 @@
             </div>
             <div class="playlist__bottom">
                 <button class="btn btn-outline">Показать еще 10 подкастов</button>
-                <button class="btn btn-wave">Показать больше</button>
+                <button class="btn btn-outline">Показать больше</button>
                 <div class="shape">
     <p class="shape__title">Поделиться</p>
     <div class="shape__list">
@@ -741,7 +722,7 @@
         <div class="news__header">
             <h2 class="section__title">Другие передачи</h2>
 
-            <div class="news__btn">
+            <div class="news__btn news__btn--pc">
                 <a href="#" class="btn btn-outline">Читать все новости</a>
             </div>
         </div>
@@ -898,6 +879,10 @@
 </div>
             </div>
             
+        </div>
+
+        <div class="news__btn news__btn--mobile">
+            <a href="#" class="btn btn-outline">Читать все новости</a>
         </div>
     </div>
 </section>

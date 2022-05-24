@@ -7,6 +7,11 @@
   background: #fff;
   z-index: 999;
   transition: all 0.5s ease-out;
+
+  @include media-breakpoint-down(sm) {
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.05);
+  }
+
   &.show-player {
     top: 0;
   }
@@ -49,7 +54,7 @@
       @media (max-width: 479.98px) {
         width: 59px;
         height: 60px;
-        bottom: 0;
+        bottom: -5px;
       }
     }
   }
@@ -93,6 +98,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    white-space: nowrap;
 
     svg {
       height: 28px;
@@ -149,6 +155,41 @@
 
       .header-toolbar__menu {
         width: 353px;
+      }
+    }
+
+    &--search {
+      position: relative;
+
+      @include media-breakpoint-down(md) {
+        margin-left: 10px;
+      }
+
+      svg {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 24px;
+        height: 24px;
+      }
+
+      input {
+        width: 100%;
+        padding: 5px 0 5px 30px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        position: relative;
+        z-index: 2;
+
+        &::placeholder {
+          color: #2670FF;
+        }
+
+        &:focus {
+          border-color: $blue;
+        }
       }
     }
   }
@@ -299,6 +340,8 @@
     padding-left: 190px;
     transition: all 0.5s ease-out;
     width: 20%;
+    align-items: center;
+
     @include media-breakpoint-down(xxl) {
       padding-left: 167px;
     }
@@ -632,7 +675,10 @@
   }
 
   &__button {
+    margin: 0 auto;
     margin-bottom: 20px;
+    width: 275px;
+    max-width: 100%;
 
     a, button {
       font-size: 16px;
@@ -648,6 +694,12 @@
         height: 28px;
         margin-right: 10px;
       }
+    }
+
+    .m-menu__feedback {
+      width: 100%;
+      text-align: left;
+      margin-left: 5px;
     }
   }
 

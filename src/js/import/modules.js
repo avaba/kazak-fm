@@ -10,6 +10,7 @@ import "%modules%/sections/section-release/section-release";
 import "%modules%/cards/card-about-us/card-about-us";
 import "%modules%/popup/popup";
 import "%modules%/map/map";
+import "%modules%/news/news";
 
 import "%modules%/advertister/adv-partners";
 import "%modules%/advertister/adv-trust";
