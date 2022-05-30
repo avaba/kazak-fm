@@ -1,23 +1,24 @@
 <section class="news section">
     <div class="container-fluid">
+
         <div class="news__header">
             <h2 class="section__title">@@title</h2>
 
             <div class="news__btn news__btn--pc">
-                <a href="#" class="btn btn-outline">Смотреть все</a>
+                <a href="#" class="btn btn-outline">Читать все</a>
             </div>
         </div>
 
-        <div class="news-slider broadcast-slider">
+        <div class="news-slider">
             @@for (let i = 0; i < 10; i++) {
             <div class="news-slider__item">
-                @@include("../../cards/card-podcast/card-podcast.html")
+                @@include("../../cards/card-transfers/card-transfers.html")
             </div>
             }
         </div>
 
         <div class="news__btn news__btn--mobile">
-            <a href="#" class="btn btn-outline">Смотреть все</a>
+            <a href="#" class="btn btn-outline">Читать все</a>
         </div>
     </div>
 </section>

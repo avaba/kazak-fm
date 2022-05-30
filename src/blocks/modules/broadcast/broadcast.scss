@@ -1,12 +1,14 @@
 .broadcast {
-    background: linear-gradient(0deg, #f7f7f7 1205px, #ffffff 1205px);
+    background: linear-gradient(0deg, #f7f7f7 915px, #ffffff 0);
+
+    &-post {
+        background: linear-gradient(0deg, #f7f7f7 1015px, #ffffff 0);
+    }
     
     @include media-breakpoint-down(md) {
         background: #fff;
     }
-    .card-podcast {
-        border-radius: 0;
-    }
+
     &-btn {
         display: none;
         @include media-breakpoint-down(md) {

@@ -13,9 +13,6 @@
                     fill: #F7F7F7;
                     cursor: pointer;
                     transition: all 0.3s ease;
-                    &:hover {
-                        fill: $accent;
-                    }
                 }
             }
         }

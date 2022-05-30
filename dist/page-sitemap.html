@@ -302,8 +302,8 @@
         </div>
         <div class="video-player__content">
             <div class="video-player__progressbar">
-                <span class="time">01:10 / 05:35</span>
-                <span class="progressbar"></span>
+                <span class="time"><span id="start-video"></span>/<span class="time-end">24:00</span></span>
+                <span id="time-video" class="progressbar"></span>
             </div>
             <div class="video-player__title">
                 <span>Из первых уст</span>
@@ -450,21 +450,10 @@
 
                                 <div class="footer__search">
                                     <div class="header-toolbar__button header-toolbar__button--search">
-                                        <button>
-                                            <svg>
-                                                <use xlink:href="img/sprites/sprite.svg#search"></use>
-                                            </svg>
-                                            <span>Поиск</span>
-                                        </button>
-
-                                        <div class="header-toolbar__menu">
-                                            <ul>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                            </ul>
-                                        </div>
+                                        <svg>
+                                            <use xlink:href="img/sprites/sprite.svg#search"></use>
+                                        </svg>
+                                        <input placeholder="Поиск" />
                                     </div>
                                 </div>
                                 <div class="footer-tel__mobile header-toolbar__button">

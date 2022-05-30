@@ -21,6 +21,10 @@
     display: inline-block;
     position: relative;
 
+    &.footer__logo {
+      opacity: 1;
+    }
+
     &:hover {
       color: $blue;
     }
@@ -46,6 +50,7 @@
   &__wrap {
     padding: 73px 0;
     background: #fff;
+    position: relative;
 
     .col-md-2 {
       text-align: center;
@@ -266,7 +271,7 @@
 
     &__search {
       justify-content: center;
-      max-width: 300px;
+      max-width: 255px;
       width: 100%;
       margin: 64px auto 0;
 

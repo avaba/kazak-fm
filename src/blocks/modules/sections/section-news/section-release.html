@@ -1,5 +1,6 @@
 <section class="news section">
     <div class="container-fluid">
+
         <div class="news__header">
             <h2 class="section__title">@@title</h2>
 
@@ -8,10 +9,10 @@
             </div>
         </div>
 
-        <div class="news-slider broadcast-slider">
+        <div class="news-slider">
             @@for (let i = 0; i < 10; i++) {
             <div class="news-slider__item">
-                @@include("../../cards/card-podcast/card-podcast.html")
+                @@include("../../cards/card-transfers/card-transfers-release.html")
             </div>
             }
         </div>

@@ -1,7 +1,7 @@
 .section {
   margin: 150px 0;
 
-  @include media-breakpoint-down(xxl) {
+  @include media-breakpoint-down(xl) {
     margin: 100px 0;
   }
 

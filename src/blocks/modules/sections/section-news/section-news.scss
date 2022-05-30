@@ -1,5 +1,6 @@
 .news {
   margin-bottom: 150px;
+  position: relative;
 
   @include media-breakpoint-down(md) {
     margin-bottom: 100px;
@@ -31,6 +32,10 @@
 
   &-slider {
     margin: 0 -18px;
+
+    .slick-track {
+      margin-bottom: 5px;
+    }
 
     @include media-breakpoint-down(xxl) {
       margin: 0 -15px;

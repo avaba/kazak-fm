@@ -4,6 +4,7 @@ import WOW from "wow.js";
 
 const volumeSlider = document.getElementById("sound");
 const timeSlider = document.getElementById("time");
+const timeSliderVideo = document.getElementById("time-video");
 
 noUiSlider.create(volumeSlider, {
     start: [0],
@@ -27,10 +28,28 @@ noUiSlider.create(timeSlider, {
     }
 });
 
+noUiSlider.create(timeSliderVideo, {
+    start: ["00:30"],
+    connect: "lower",
+    range: {
+        "min": 0,
+        "max": 24 * 60
+    },
+    format: {
+        to: minutesToHHMM,
+        from: HHMMtoMinutes
+    }
+});
+
 const Start = document.getElementById("start");
+const StartVideo = document.getElementById("start-video");
 
 timeSlider.noUiSlider.on("update", function (values, handle) {
     Start.innerHTML = values[handle];
+});
+
+timeSliderVideo.noUiSlider.on("update", function (values, handle) {
+    StartVideo.innerHTML = values[handle];
 });
 
 function minutesToHHMM(value) {
@@ -85,6 +104,8 @@ $(".listen-live").on("click", function () {
     `);
     $(".header-player").toggleClass("show");
     $(".m-menu").fadeOut();
+    $(".video-player").removeClass("show");
+    $(".video-player").removeClass("fullscreen");
 });
 
 $(".wach-live").on("click", function () {
@@ -93,7 +114,8 @@ $(".wach-live").on("click", function () {
     `);
     $(".header").removeClass("showed");
     $(".m-menu").fadeOut();
-    $(".video-player").fadeIn();
+    $(".video-player").toggleClass("show");
+    $(".header-player").removeClass("show");
 });
 
 $("#full-screen").on("click", function () {
@@ -101,11 +123,14 @@ $("#full-screen").on("click", function () {
 });
 
 $("#video-close").on("click", function () {
-    $(".video-player").fadeOut();
+    $(".video-player").removeClass("show");
+    $(".video-player").removeClass("fullscreen");
 });
 
 $("#player-close").on("click", function () {
     $(".header-player").toggleClass("show");
+    $(".video-player").removeClass("show");
+    $(".video-player").removeClass("fullscreen");
 });
 
 $(".header-toolbar__button button").on("click", function () {

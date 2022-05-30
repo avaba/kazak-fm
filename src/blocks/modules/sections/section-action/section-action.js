@@ -7,7 +7,7 @@ $(".action__slider").slick({
     slidesToScroll: 1,
     responsive: [
         {
-            breakpoint: 480,
+            breakpoint: 1081,
             settings: {
                 slidesToShow: 1
             }

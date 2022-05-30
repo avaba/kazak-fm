@@ -302,8 +302,8 @@
         </div>
         <div class="video-player__content">
             <div class="video-player__progressbar">
-                <span class="time">01:10 / 05:35</span>
-                <span class="progressbar"></span>
+                <span class="time"><span id="start-video"></span>/<span class="time-end">24:00</span></span>
+                <span id="time-video" class="progressbar"></span>
             </div>
             <div class="video-player__title">
                 <span>Из первых уст</span>
@@ -395,7 +395,14 @@
 </section>
         <section class="section action action-slider">
     <div class="container-fluid">
-        <h2 class="section__title">Другие события</h2>
+        <div class="news__header">
+            <h2 class="section__title">Другие события</h2>
+
+            <div class="news__btn news__btn--pc">
+                <a href="#" class="btn btn-outline">Смотреть все</a>
+            </div>
+        </div>
+
         <div class="action__list action__slider row">
              <div class="action__item col-md-6">
     <div class="action__item-image">
@@ -437,10 +444,11 @@
         <p>15 июля 2020</p>
         <a href="action-post.html" class="btn">Подробнее</a>
     </div>
-</div>  </div>
-                <div class="action__btn">
-                    <a href="#" class="btn btn-outline">Показать больше</a>
-                </div>
+</div> 
+        </div>
+
+        <div class="news__btn news__btn--mobile">
+            <a href="#" class="btn btn-outline">Смотреть все</a>
         </div>
     </div>
 </section>
@@ -550,21 +558,10 @@
 
                                 <div class="footer__search">
                                     <div class="header-toolbar__button header-toolbar__button--search">
-                                        <button>
-                                            <svg>
-                                                <use xlink:href="img/sprites/sprite.svg#search"></use>
-                                            </svg>
-                                            <span>Поиск</span>
-                                        </button>
-
-                                        <div class="header-toolbar__menu">
-                                            <ul>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                                <li><a href="#">Акции и конкурсы</a></li>
-                                            </ul>
-                                        </div>
+                                        <svg>
+                                            <use xlink:href="img/sprites/sprite.svg#search"></use>
+                                        </svg>
+                                        <input placeholder="Поиск" />
                                     </div>
                                 </div>
                                 <div class="footer-tel__mobile header-toolbar__button">
