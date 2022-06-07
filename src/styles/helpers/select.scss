@@ -1,0 +1,101 @@
+select {
+  display: none;
+}
+
+.jq-selectbox {
+  &__select {
+    height: 53px;
+    padding: 0 45px 0 20px;
+    border: 1px solid #FCAF17;
+    border-bottom-color: #FCAF17;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    font: 14px/32px Arial, sans-serif;
+    line-height: 53px;
+    color: #000;
+    text-shadow: none;
+    font-size: 16px;
+
+    &:active {
+      background: transparent;
+      box-shadow: none;
+      border-bottom-color: transparent;
+    }
+
+    &:hover {
+      background: transparent;
+      box-shadow: none;
+    }
+  }
+
+  &__trigger {
+    border-left: 0;
+
+    &-arrow {
+      top: 22px;
+    }
+  }
+
+  &__dropdown {
+    margin: 0 0 0;
+    padding: 0;
+    border: 1px solid #FCAF17;
+    border-top-color: transparent;
+    border-radius: 0;
+    background: #FFF;
+    box-shadow: none;
+  }
+
+  li {
+    padding: 16px 20px 16px;
+    color: #555555;
+    font-size: 18px;
+    position: relative;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 14px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 20px;
+      right: 20px;
+      height: 1px;
+      background: #CFCFCF;
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+
+    &.sel {
+      background-color: #fff;
+      color: #FCAF17;
+
+      &.selected {
+        background-color: #fff;
+        color: #FCAF17;
+      }
+    }
+    
+    &:hover {
+      background: #F7F7F7;
+      color: #000;
+    }
+  }
+}
+
+.jq-selectbox.focused .jq-selectbox__select {
+  border-color: #FCAF17;
+}
+
+.jq-selectbox.opened .jq-selectbox__select {
+  border: 1px solid #FCAF17;
+  border-bottom-color: transparent;
+}

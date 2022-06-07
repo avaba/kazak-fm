@@ -1,8 +1,51 @@
 .broadcast {
-    background: linear-gradient(0deg, #f7f7f7 915px, #ffffff 0);
-
+    .bg-top {
+        position: relative;
+        
+        &:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 241px;
+            width: 150vw;
+            height: 1000%;
+            background: #fff;
+            display: block;
+            z-index: -1;
+        }
+    }
+    
     &-post {
-        background: linear-gradient(0deg, #f7f7f7 1015px, #ffffff 0);
+        background: #fff;
+
+        .bg-bot {
+            position: relative;
+
+            &:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                top: 247px;
+                width: 150vw;
+                height: 1000%;
+                background: #f7f7f7;
+                display: block;
+
+                @include media-breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+
+        .news-slider {
+            margin-bottom: -25px;
+
+            .slick-slide {
+                margin: 0 15px 25px 15px;
+            }
+        }
     }
     
     @include media-breakpoint-down(md) {

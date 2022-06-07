@@ -1,6 +1,8 @@
 import $ from "jquery";
 import noUiSlider from "nouislider";
 import WOW from "wow.js";
+import {gsap} from "gsap";
+import styler from "../../../js/import/jquery.formstyler.min";
 
 const volumeSlider = document.getElementById("sound");
 const timeSlider = document.getElementById("time");
@@ -71,10 +73,10 @@ new WOW().init();
 let i = 0;
 lastScrollTop = 0;
 $(window).on("scroll", function () {
-    var top = $(window).scrollTop();
+    const top = $(window).scrollTop();
     $(".separator").each(function () {
         if ($(this).offset().top < ($(window).scrollTop() + screen.height) && $(this).offset().top > $(window).scrollTop()) {
-            $(this).css("background-position-x", i + "px");
+            gsap.to(this, 0 , {backgroundPositionX: i + "px"});
             if ($(this).hasClass("reverse")) {
                 if (lastScrollTop > top) {
                     i += 2;
@@ -208,4 +210,6 @@ $(".header-mobile__burger").on("click", function () {
         $(".header").toggleClass("showed");
     }
 });
+
+$("select").styler();
 

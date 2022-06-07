@@ -20,7 +20,7 @@
   }
 
   &__image {
-    width: 463px;
+    width: 45%;
 
     img {
       width: 100%;
@@ -41,6 +41,7 @@
     margin-right: -22px;
     display: flex;
     align-items: flex-start;
+    gap: 20px;
 
     .btn {
       border-radius: 5px;
@@ -72,6 +73,16 @@
       width: 49%;
     }
   }
+
+  &__btns {
+    flex-wrap: wrap;
+    display: inline-flex;
+    gap: 10px;
+
+    a {
+      margin: 0 !important;
+    }
+  }
 }
 
 @include media-breakpoint-down(xl) {
@@ -82,13 +93,15 @@
 
 @media (max-width: 1380px) {
   .broadcast-content {
-    &__info {
-      flex-wrap: wrap;
-    }
-
     &__btns {
-      width: 100%;
       margin-bottom: 40px;
+      flex-wrap: wrap;
+      display: inline-flex;
+      gap: 10px;
+
+      a {
+        margin: 0 !important;
+      }
     }
   }
 }
@@ -108,7 +121,7 @@
   }
 }
 
-@include media-breakpoint-down(md) {
+@include media-breakpoint-down(lg) {
   .broadcast-content {
     .container-fluid {
       padding: 0;
@@ -160,7 +173,7 @@
   }
 }
 
-@media (max-width: 479.98px) {
+@include media-breakpoint-down(sm) {
   .broadcast-content {
     &__info {
       flex-direction: column-reverse;
