@@ -32,3 +32,11 @@
  *
  * Date: 2021-03-02T17:08Z
  */
+
+/*!Don't remove this!
+ * duDatePicker v2.0 plugin (Vanilla JS)
+ * https://github.com/dmuy/duDatepicker
+ *
+ * Author: Dionlee Uy
+ * Email: dionleeuy@gmail.com
+ */
