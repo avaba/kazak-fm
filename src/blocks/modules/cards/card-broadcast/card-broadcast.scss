@@ -23,6 +23,7 @@
     max-width: 665px;
     width: 50%;
     position: relative;
+    min-height: 448px;
 
     @include media-breakpoint-down(lg) {
       width: 40%;
@@ -104,6 +105,10 @@
   }
 
   &__date {
+    @include media-breakpoint-down(md) {
+      margin-bottom: 20px;
+    }
+
     span {
       font-weight: 600;
     }
@@ -167,6 +172,10 @@
   &__avatar {
     display: flex;
 
+    .author-info {
+      display: none;
+    }
+
     img {
       width: 70px;
       height: 70px;
@@ -175,6 +184,7 @@
       object-fit: cover;
       object-position: center;
       border: 1px solid #FCAF17;
+      cursor: pointer;
     }
   }
 

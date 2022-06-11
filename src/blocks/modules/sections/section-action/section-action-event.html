@@ -1,20 +1,15 @@
-<section class="news section">
+<section class="section action action-slider">
     <div class="container-fluid">
-
         <div class="news__header">
-            <h2 class="section__title">@@title</h2>
+            <h2 class="section__title">Другие события</h2>
 
             <div class="news__btn news__btn--pc">
                 <a href="#" class="btn btn-outline">Смотреть все</a>
             </div>
         </div>
 
-        <div class="news-slider @@bg">
-            @@for (let i = 0; i < 10; i++) {
-            <div class="news-slider__item">
-                @@include("../../cards/card-transfers/card-transfers.html")
-            </div>
-            }
+        <div class="action__list action__slider row @@bg">
+            @@for (let i = 0; i < 4; i++) { @@include("../../cards/card-action/card-action.html") }
         </div>
 
         <div class="news__btn news__btn--mobile">

@@ -22,7 +22,6 @@
 }
 
 .release__slider {
-    
     .slick-arrow {
        &.slick-next {
             right: -700px;
@@ -74,4 +73,28 @@
     .news-content.release .release__btns .btn:first-child {
         margin-right: 3px;
     }
+}
+
+.release-page {
+  background: #fff;
+
+  .bg-top {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 247px;
+      width: 150vw;
+      height: 1000%;
+      background: #f7f7f7;
+      display: block;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
 }

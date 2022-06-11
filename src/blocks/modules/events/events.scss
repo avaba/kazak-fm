@@ -1,0 +1,21 @@
+.events {
+  .bg-bot {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 225px;
+      width: 150vw;
+      height: 1000%;
+      background: #f7f7f7;
+      display: block;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+  }
+}

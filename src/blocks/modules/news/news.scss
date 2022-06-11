@@ -60,6 +60,22 @@
 }
 
 .news-content {
+  .bg-bot {
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 260px;
+      width: 150vw;
+      height: 1000%;
+      background: #f7f7f7;
+      display: block;
+    }
+  }
+
   &__img {
     &.no-mb {
       margin-bottom: 0;
@@ -188,31 +204,6 @@
     @include media-breakpoint-down(sm) {
       font-size: 16px;
       margin-bottom: 22px;
-    }
-  }
-
-  .news {
-    position: relative;
-
-    &:before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: -1000%;
-      height: 1000%;
-      background: #fff;
-      left: 0;
-      width: 100%;
-      z-index: -1;
-      margin-top: 409px;
-
-      @include media-breakpoint-down(xl) {
-        margin-top: 390px;
-      }
-
-      @include media-breakpoint-down(md) {
-        margin-top: 301px;
-      }
     }
   }
 

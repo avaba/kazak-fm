@@ -16,11 +16,11 @@ body {
       background: #f7f7f7;
     }
     &-inside {
-      background: linear-gradient(180deg, #ffffff 650px, #f7f7f7 650px);
+      background: linear-gradient(180deg, #ffffff 742px, #f7f7f7 0);
     }
   }
   &.bg-release {
-    background: linear-gradient(0deg, #f7f7f7 2041px, #ffffff 0px);
+    background: linear-gradient(0deg, #f7f7f7 1987px, #ffffff 0px);
     @media (max-width: 656.98px) {
       background: #fff;
     }
